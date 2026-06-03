@@ -1,0 +1,168 @@
+import { PrismaClient, Role, LoyaltyTier } from '@prisma/client';
+import * as bcrypt from 'bcrypt';
+
+const prisma = new PrismaClient();
+
+async function main() {
+  console.log('Seeding Database with BrewHub Enterprise defaults...');
+
+  // 1. Seed Users & Profiles
+  const superAdminHash = await bcrypt.hash('admin', 10);
+  
+  const superAdmin = await prisma.user.upsert({
+    where: { email: 'admin@admin' },
+    update: {},
+    create: {
+      email: 'admin@admin',
+      password: superAdminHash,
+      name: 'Vikram Aditya Singhania',
+      role: Role.SUPER_ADMIN,
+      profile: {
+        create: {
+          loyaltyTier: LoyaltyTier.PLATINUM,
+          loyaltyPoints: 5000,
+        }
+      }
+    }
+  });
+
+  const customer = await prisma.user.upsert({
+    where: { email: 'customer@brewhub.com' },
+    update: {},
+    create: {
+      email: 'customer@brewhub.com',
+      password: await bcrypt.hash('password123', 10),
+      name: 'Vishaal Kumar',
+      role: Role.CUSTOMER,
+      profile: {
+        create: {
+          loyaltyTier: LoyaltyTier.SILVER,
+          loyaltyPoints: 180,
+          cashbackBalance: 75.00,
+        }
+      }
+    }
+  });
+
+  console.log(`Users seeded: SuperAdmin (${superAdmin.email}), Customer (${customer.email})`);
+
+  // 2. Seed Branches
+  const mainBranch = await prisma.branch.create({
+    data: {
+      name: 'Downtown flagship',
+      address: '456 Luxury Blvd',
+      city: 'Mumbai',
+      phone: '+919999999001',
+      active: 'true',
+    }
+  });
+  console.log(`Branch seeded: ${mainBranch.name}`);
+
+  // 3. Seed Menu Categories (Clean old first to prevent conflicts)
+  await prisma.menuItem.deleteMany();
+  await prisma.menuCategory.deleteMany();
+
+  const categories = [
+    { id: 'cat-breakfast', name: 'Breakfast Specials', description: 'Morning dosas, fluffy blueberry pancakes, and light starters', sortOrder: 1 },
+    { id: 'cat-italian', name: 'Italian & Pastas', description: 'Wood-fired pizzas, slow-cooked lasagna, and creamy fettuccine', sortOrder: 2 },
+    { id: 'cat-grill', name: 'Gourmet Burgers & Grills', description: 'A5 Miyazaki Wagyu sliders, chicken wings, and grilled steaks', sortOrder: 3 },
+    { id: 'cat-chaat', name: 'Artisan Indian Chaat', description: 'Tangy golgappas, crispy samosa chaat, and pav bhaji platters', sortOrder: 4 },
+    { id: 'cat-drinks', name: 'Hot Coffee & Beverages', description: 'Saffron cardamom cappuccino, cutting chai, and coolers', sortOrder: 5 },
+    { id: 'cat-desserts', name: 'Sweet Endings', description: 'Classic tiramisu, saffron rabri rasmalai, and lava cakes', sortOrder: 6 }
+  ];
+
+  for (const cat of categories) {
+    await prisma.menuCategory.upsert({
+      where: { id: cat.id },
+      update: {},
+      create: cat
+    });
+  }
+  console.log('Categories seeded.');
+
+  // 4. Seed Menu Items
+  const menuItems = [
+    // Breakfast
+    { id: 'item-1', categoryId: 'cat-breakfast', name: 'Masala Dosa Combo with Podi', price: 180, isVeg: true, calories: 340, image: 'https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500&auto=format&fit=crop' },
+    { id: 'item-2', categoryId: 'cat-breakfast', name: 'Fluffy Blueberry Pancakes', price: 220, isVeg: true, calories: 580, image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&auto=format&fit=crop' },
+    { id: 'item-3', categoryId: 'cat-breakfast', name: 'Idli Sambar Ghee Roast Plate', price: 150, isVeg: true, calories: 210, image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop' },
+    
+    // Italian
+    { id: 'item-4', categoryId: 'cat-italian', name: 'Truffle Mushroom Fettuccine Alfredo', price: 450, isVeg: true, calories: 890, image: 'https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=500&auto=format&fit=crop' },
+    { id: 'item-5', categoryId: 'cat-italian', name: 'Wood-fired Margherita Pizza', price: 320, isVeg: true, calories: 620, image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop' },
+    { id: 'item-6', categoryId: 'cat-italian', name: 'Slow-cooked Bolognese Lasagna', price: 390, isVeg: false, calories: 680, image: 'https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=500&auto=format&fit=crop' },
+    
+    // Grill
+    { id: 'item-7', categoryId: 'cat-grill', name: 'A5 Miyazaki Wagyu Sliders', price: 380, isVeg: false, calories: 720, image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop' },
+    { id: 'item-8', categoryId: 'cat-grill', name: 'Classic Caesar Salad with Chicken', price: 290, isVeg: false, calories: 340, image: 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=500&auto=format&fit=crop' },
+    
+    // Chaat
+    { id: 'item-9', categoryId: 'cat-chaat', name: 'Delhi Dahi Papdi Chaat Deluxe', price: 120, isVeg: true, calories: 280, image: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop' },
+    { id: 'item-10', categoryId: 'cat-chaat', name: 'Mumbai Special Vada Pav (2pcs)', price: 90, isVeg: true, calories: 310, image: 'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500&auto=format&fit=crop' },
+    
+    // Drinks
+    { id: 'item-11', categoryId: 'cat-drinks', name: 'Saffron Cardamom Cappuccino', price: 140, isVeg: true, calories: 240, image: 'https://images.unsplash.com/photo-1534778101976-62847782c213?w=500&auto=format&fit=crop' },
+    { id: 'item-12', categoryId: 'cat-drinks', name: 'BrewHub Masala Cutting Chai', price: 80, isVeg: true, calories: 95, image: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500&auto=format&fit=crop' },
+    
+    // Desserts
+    { id: 'item-13', categoryId: 'cat-desserts', name: 'Classic Espresso Tiramisu', price: 180, isVeg: true, calories: 320, image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&auto=format&fit=crop' },
+    { id: 'item-14', categoryId: 'cat-desserts', name: 'Warm Chocolate Lava Cake with Gelato', price: 150, isVeg: true, calories: 410, image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&auto=format&fit=crop' }
+  ];
+
+  for (const item of menuItems) {
+    await prisma.menuItem.upsert({
+      where: { id: item.id },
+      update: {},
+      create: {
+        id: item.id,
+        categoryId: item.categoryId,
+        name: item.name,
+        price: item.price,
+        isVeg: item.isVeg,
+        calories: item.calories,
+        image: item.image,
+        active: true,
+        customizations: {
+          create: {
+            name: 'Select Size',
+            minSelect: 1,
+            maxSelect: 1,
+            options: {
+              create: [
+                { name: 'Regular Size', price: 0, isDefault: true },
+                { name: 'Grande Size', price: 50, isDefault: false }
+              ]
+            }
+          }
+        }
+      }
+    });
+  }
+  console.log('Sample customized dishes seeded.');
+
+  // 5. Seed Tables
+  for (let i = 1; i <= 5; i++) {
+    const tableNum = (100 + i).toString();
+    await prisma.table.create({
+      data: {
+        branchId: mainBranch.id,
+        tableNumber: tableNum,
+        capacity: i % 2 === 0 ? 4 : 2,
+        status: i === 2 ? 'OCCUPIED' : 'AVAILABLE',
+        qrCode: `TABLE-${mainBranch.id}-${tableNum}-QR`
+      }
+    });
+  }
+  console.log('Tables layout seeded.');
+
+  console.log('Database seeding finished successfully!');
+}
+
+main()
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });

@@ -1,0 +1,103 @@
+import { OrdersService } from './orders.service';
+export declare class OrdersController {
+    private readonly ordersService;
+    constructor(ordersService: OrdersService);
+    placeOrder(dto: any, req: any): Promise<any>;
+    getOrders(role?: string, userId?: string): Promise<import("../prisma/mock-db.service").MockOrder[] | ({
+        items: {
+            id: string;
+            price: import("@prisma/client/runtime/library").Decimal;
+            customizations: import("@prisma/client/runtime/library").JsonValue | null;
+            menuItemId: string;
+            subtotal: import("@prisma/client/runtime/library").Decimal;
+            quantity: number;
+            orderId: string;
+        }[];
+    } & {
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        status: import("@prisma/client").$Enums.OrderStatus;
+        branchId: string;
+        deliveryStaffId: string | null;
+        type: import("@prisma/client").$Enums.OrderType;
+        deliveryAddress: string | null;
+        cookingNotes: string | null;
+        deliveryNotes: string | null;
+        paymentMethod: string;
+        tableId: string | null;
+        orderNumber: string;
+        subtotal: import("@prisma/client/runtime/library").Decimal;
+        tax: import("@prisma/client/runtime/library").Decimal;
+        deliveryFee: import("@prisma/client/runtime/library").Decimal;
+        discount: import("@prisma/client/runtime/library").Decimal;
+        total: import("@prisma/client/runtime/library").Decimal;
+        paymentStatus: string;
+        paymentTransactionId: string | null;
+        otp: string | null;
+        otpVerified: boolean;
+        customerId: string | null;
+    })[]>;
+    updateStatus(id: string, status: string, deliveryStaffId?: string): Promise<import("../prisma/mock-db.service").MockOrder | {
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        status: import("@prisma/client").$Enums.OrderStatus;
+        branchId: string;
+        deliveryStaffId: string | null;
+        type: import("@prisma/client").$Enums.OrderType;
+        deliveryAddress: string | null;
+        cookingNotes: string | null;
+        deliveryNotes: string | null;
+        paymentMethod: string;
+        tableId: string | null;
+        orderNumber: string;
+        subtotal: import("@prisma/client/runtime/library").Decimal;
+        tax: import("@prisma/client/runtime/library").Decimal;
+        deliveryFee: import("@prisma/client/runtime/library").Decimal;
+        discount: import("@prisma/client/runtime/library").Decimal;
+        total: import("@prisma/client/runtime/library").Decimal;
+        paymentStatus: string;
+        paymentTransactionId: string | null;
+        otp: string | null;
+        otpVerified: boolean;
+        customerId: string | null;
+    }>;
+    verifyOtp(id: string, otp: string): Promise<import("../prisma/mock-db.service").MockOrder | {
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        status: import("@prisma/client").$Enums.OrderStatus;
+        branchId: string;
+        deliveryStaffId: string | null;
+        type: import("@prisma/client").$Enums.OrderType;
+        deliveryAddress: string | null;
+        cookingNotes: string | null;
+        deliveryNotes: string | null;
+        paymentMethod: string;
+        tableId: string | null;
+        orderNumber: string;
+        subtotal: import("@prisma/client/runtime/library").Decimal;
+        tax: import("@prisma/client/runtime/library").Decimal;
+        deliveryFee: import("@prisma/client/runtime/library").Decimal;
+        discount: import("@prisma/client/runtime/library").Decimal;
+        total: import("@prisma/client/runtime/library").Decimal;
+        paymentStatus: string;
+        paymentTransactionId: string | null;
+        otp: string | null;
+        otpVerified: boolean;
+        customerId: string | null;
+    }>;
+    splitBill(id: string, guests: string): Promise<{
+        orderId: string;
+        orderNumber: any;
+        total: number;
+        guestsCount: number;
+        amountPerGuest: number;
+        splitDetails: {
+            guestNumber: number;
+            share: number;
+            status: string;
+        }[];
+    }>;
+}

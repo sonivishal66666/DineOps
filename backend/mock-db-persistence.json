@@ -1,0 +1,3425 @@
+{
+  "categories": [
+    {
+      "id": "cat-breakfast",
+      "name": "Breakfast Specials",
+      "description": "Morning dosas, fluffy blueberry pancakes, and light starters",
+      "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&auto=format&fit=crop&q=80",
+      "sortOrder": 1
+    },
+    {
+      "id": "cat-italian",
+      "name": "Italian & Pastas",
+      "description": "Wood-fired pizzas, slow-cooked lasagna, and creamy fettuccine",
+      "image": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=500&auto=format&fit=crop&q=80",
+      "sortOrder": 2
+    },
+    {
+      "id": "cat-grill",
+      "name": "Gourmet Burgers & Grills",
+      "description": "A5 Miyazaki Wagyu sliders, chicken wings, and grilled steaks",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=80",
+      "sortOrder": 3
+    },
+    {
+      "id": "cat-chaat",
+      "name": "Artisan Indian Chaat",
+      "description": "Tangy golgappas, crispy samosa chaat, and pav bhaji platters",
+      "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop&q=80",
+      "sortOrder": 4
+    },
+    {
+      "id": "cat-drinks",
+      "name": "Hot Coffee & Beverages",
+      "description": "Saffron cardamom cappuccino, cutting chai, and coolers",
+      "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?w=500&auto=format&fit=crop&q=80",
+      "sortOrder": 5
+    },
+    {
+      "id": "cat-desserts",
+      "name": "Sweet Endings",
+      "description": "Classic tiramisu, saffron rabri rasmalai, and lava cakes",
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&auto=format&fit=crop&q=80",
+      "sortOrder": 6
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "item-1",
+      "categoryId": "cat-breakfast",
+      "name": "Masala Dosa Combo with Podi",
+      "description": "Gourmet preparation using finest handpicked ingredients",
+      "price": 377,
+      "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": true,
+      "isGlutenFree": true,
+      "isKeto": true,
+      "calories": 478,
+      "protein": 40,
+      "carbohydrates": 45,
+      "fat": 20,
+      "allergens": [
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-2",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-2",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-2",
+              "name": "Grande / Large Size",
+              "price": 113,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-2",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-2",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-2",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-2",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-2",
+      "categoryId": "cat-breakfast",
+      "name": "Fluffy Blueberry Pancakes",
+      "description": "Artisan crafted for premium luxury dining and rich texture",
+      "price": 558,
+      "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 240,
+      "protein": 29,
+      "carbohydrates": 26,
+      "fat": 6,
+      "allergens": [
+        "gluten"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-3",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-3",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-3",
+              "name": "Grande / Large Size",
+              "price": 167,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-3",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-3",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-3",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-3",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-3",
+      "categoryId": "cat-breakfast",
+      "name": "Idli Sambar Ghee Roast Plate",
+      "description": "A perfect balance of organic flavors, calories, and visual charm",
+      "price": 392,
+      "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 207,
+      "protein": 27,
+      "carbohydrates": 65,
+      "fat": 24,
+      "allergens": [
+        "nuts",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-4",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-4",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-4",
+              "name": "Grande / Large Size",
+              "price": 118,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-4",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-4",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-4",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-4",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-4",
+      "categoryId": "cat-breakfast",
+      "name": "Smoked Salmon Eggs Benedict",
+      "description": "A customer favorite, freshly prepared by our specialty chef",
+      "price": 476,
+      "image": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=500&auto=format&fit=crop",
+      "isVeg": false,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 715,
+      "protein": 7,
+      "carbohydrates": 30,
+      "fat": 10,
+      "allergens": [],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-5",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-5",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-5",
+              "name": "Grande / Large Size",
+              "price": 143,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-5",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-5",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-5",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-5",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-5",
+      "categoryId": "cat-breakfast",
+      "name": "Rava Upma Bowl with Cashews",
+      "description": "High protein, keto-friendly option crafted for health conscious patrons",
+      "price": 346,
+      "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": true,
+      "isKeto": false,
+      "calories": 599,
+      "protein": 44,
+      "carbohydrates": 41,
+      "fat": 2,
+      "allergens": [
+        "seafood"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-6",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-6",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-6",
+              "name": "Grande / Large Size",
+              "price": 104,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-6",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-6",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-6",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-6",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-6",
+      "categoryId": "cat-breakfast",
+      "name": "Homestyle Stuffed Aloo Paratha",
+      "description": "Delicately seasoned, rich in taste, and beautifully presented",
+      "price": 665,
+      "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": true,
+      "calories": 547,
+      "protein": 6,
+      "carbohydrates": 68,
+      "fat": 27,
+      "allergens": [
+        "soy"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-7",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-7",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-7",
+              "name": "Grande / Large Size",
+              "price": 200,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-7",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-7",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-7",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-7",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-7",
+      "categoryId": "cat-italian",
+      "name": "Truffle Mushroom Fettuccine Alfredo",
+      "description": "Gourmet preparation using finest handpicked ingredients",
+      "price": 411,
+      "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": true,
+      "isGlutenFree": true,
+      "isKeto": true,
+      "calories": 246,
+      "protein": 8,
+      "carbohydrates": 76,
+      "fat": 31,
+      "allergens": [
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-8",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-8",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-8",
+              "name": "Grande / Large Size",
+              "price": 123,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-8",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-8",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-8",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-8",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-8",
+      "categoryId": "cat-italian",
+      "name": "Wood-fired Margherita Pizza",
+      "description": "Artisan crafted for premium luxury dining and rich texture",
+      "price": 608,
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 122,
+      "protein": 14,
+      "carbohydrates": 18,
+      "fat": 3,
+      "allergens": [
+        "gluten"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-9",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-9",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-9",
+              "name": "Grande / Large Size",
+              "price": 182,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-9",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-9",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-9",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-9",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-9",
+      "categoryId": "cat-italian",
+      "name": "Slow-cooked Bolognese Lasagna",
+      "description": "A perfect balance of organic flavors, calories, and visual charm",
+      "price": 368,
+      "image": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=500&auto=format&fit=crop",
+      "isVeg": false,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 676,
+      "protein": 32,
+      "carbohydrates": 27,
+      "fat": 14,
+      "allergens": [
+        "nuts",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-10",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-10",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-10",
+              "name": "Grande / Large Size",
+              "price": 110,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-10",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-10",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-10",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-10",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-10",
+      "categoryId": "cat-italian",
+      "name": "Pesto Genovese Penne Pasta",
+      "description": "A customer favorite, freshly prepared by our specialty chef",
+      "price": 858,
+      "image": "https://images.unsplash.com/photo-1598866594230-a7c12756260f?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": true,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 715,
+      "protein": 19,
+      "carbohydrates": 82,
+      "fat": 28,
+      "allergens": [],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-11",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-11",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-11",
+              "name": "Grande / Large Size",
+              "price": 257,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-11",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-11",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-11",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-11",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-11",
+      "categoryId": "cat-italian",
+      "name": "Four-Cheese Gorgonzola Gnocchi",
+      "description": "High protein, keto-friendly option crafted for health conscious patrons",
+      "price": 688,
+      "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": true,
+      "isKeto": false,
+      "calories": 656,
+      "protein": 27,
+      "carbohydrates": 42,
+      "fat": 28,
+      "allergens": [
+        "seafood"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-12",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-12",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-12",
+              "name": "Grande / Large Size",
+              "price": 206,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-12",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-12",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-12",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-12",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-12",
+      "categoryId": "cat-italian",
+      "name": "Spaghetti Carbonara Premium",
+      "description": "Delicately seasoned, rich in taste, and beautifully presented",
+      "price": 217,
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop",
+      "isVeg": false,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": true,
+      "calories": 218,
+      "protein": 18,
+      "carbohydrates": 79,
+      "fat": 12,
+      "allergens": [
+        "soy"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-13",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-13",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-13",
+              "name": "Grande / Large Size",
+              "price": 65,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-13",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-13",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-13",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-13",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-13",
+      "categoryId": "cat-grill",
+      "name": "A5 Miyazaki Wagyu Sliders",
+      "description": "Gourmet preparation using finest handpicked ingredients",
+      "price": 641,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop",
+      "isVeg": false,
+      "isVegan": false,
+      "isGlutenFree": true,
+      "isKeto": true,
+      "calories": 667,
+      "protein": 39,
+      "carbohydrates": 59,
+      "fat": 12,
+      "allergens": [
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-14",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-14",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-14",
+              "name": "Grande / Large Size",
+              "price": 192,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-14",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-14",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-14",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-14",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-14",
+      "categoryId": "cat-grill",
+      "name": "Classic Caesar Salad with Chicken",
+      "description": "Artisan crafted for premium luxury dining and rich texture",
+      "price": 371,
+      "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=500&auto=format&fit=crop",
+      "isVeg": false,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 634,
+      "protein": 40,
+      "carbohydrates": 38,
+      "fat": 26,
+      "allergens": [
+        "gluten"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-15",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-15",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-15",
+              "name": "Grande / Large Size",
+              "price": 111,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-15",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-15",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-15",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-15",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-15",
+      "categoryId": "cat-grill",
+      "name": "Gourmet Cottage Cheese Steak",
+      "description": "A perfect balance of organic flavors, calories, and visual charm",
+      "price": 464,
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 558,
+      "protein": 28,
+      "carbohydrates": 75,
+      "fat": 7,
+      "allergens": [
+        "nuts",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-16",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-16",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-16",
+              "name": "Grande / Large Size",
+              "price": 139,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-16",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-16",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-16",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-16",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-16",
+      "categoryId": "cat-grill",
+      "name": "Smoked BBQ Chicken Wings",
+      "description": "A customer favorite, freshly prepared by our specialty chef",
+      "price": 195,
+      "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500&auto=format&fit=crop",
+      "isVeg": false,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 254,
+      "protein": 24,
+      "carbohydrates": 69,
+      "fat": 8,
+      "allergens": [],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-17",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-17",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-17",
+              "name": "Grande / Large Size",
+              "price": 59,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-17",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-17",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-17",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-17",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-17",
+      "categoryId": "cat-grill",
+      "name": "Flame-broiled Ribeye Steak",
+      "description": "High protein, keto-friendly option crafted for health conscious patrons",
+      "price": 725,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop",
+      "isVeg": false,
+      "isVegan": false,
+      "isGlutenFree": true,
+      "isKeto": false,
+      "calories": 285,
+      "protein": 44,
+      "carbohydrates": 18,
+      "fat": 17,
+      "allergens": [
+        "seafood"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-18",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-18",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-18",
+              "name": "Grande / Large Size",
+              "price": 218,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-18",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-18",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-18",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-18",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-18",
+      "categoryId": "cat-grill",
+      "name": "DineOps Signature Chicken Club",
+      "description": "Delicately seasoned, rich in taste, and beautifully presented",
+      "price": 388,
+      "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=500&auto=format&fit=crop",
+      "isVeg": false,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": true,
+      "calories": 204,
+      "protein": 19,
+      "carbohydrates": 84,
+      "fat": 5,
+      "allergens": [
+        "soy"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-19",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-19",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-19",
+              "name": "Grande / Large Size",
+              "price": 116,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-19",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-19",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-19",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-19",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-19",
+      "categoryId": "cat-chaat",
+      "name": "Delhi Dahi Papdi Chaat Deluxe",
+      "description": "Gourmet preparation using finest handpicked ingredients",
+      "price": 370,
+      "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": true,
+      "isGlutenFree": true,
+      "isKeto": true,
+      "calories": 576,
+      "protein": 13,
+      "carbohydrates": 24,
+      "fat": 14,
+      "allergens": [
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-20",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-20",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-20",
+              "name": "Grande / Large Size",
+              "price": 111,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-20",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-20",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-20",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-20",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-20",
+      "categoryId": "cat-chaat",
+      "name": "Mumbai Special Vada Pav (2pcs)",
+      "description": "Artisan crafted for premium luxury dining and rich texture",
+      "price": 373,
+      "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 663,
+      "protein": 28,
+      "carbohydrates": 17,
+      "fat": 9,
+      "allergens": [
+        "gluten"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-21",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-21",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-21",
+              "name": "Grande / Large Size",
+              "price": 112,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-21",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-21",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-21",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-21",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-21",
+      "categoryId": "cat-chaat",
+      "name": "Loaded Butter Pav Bhaji Platter",
+      "description": "A perfect balance of organic flavors, calories, and visual charm",
+      "price": 526,
+      "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 376,
+      "protein": 6,
+      "carbohydrates": 15,
+      "fat": 31,
+      "allergens": [
+        "nuts",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-22",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-22",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-22",
+              "name": "Grande / Large Size",
+              "price": 158,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-22",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-22",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-22",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-22",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-22",
+      "categoryId": "cat-chaat",
+      "name": "Spicy Pani Puri Golgappa Plate",
+      "description": "A customer favorite, freshly prepared by our specialty chef",
+      "price": 736,
+      "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": true,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 574,
+      "protein": 21,
+      "carbohydrates": 57,
+      "fat": 7,
+      "allergens": [],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-23",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-23",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-23",
+              "name": "Grande / Large Size",
+              "price": 221,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-23",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-23",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-23",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-23",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-23",
+      "categoryId": "cat-chaat",
+      "name": "Samosa Chaat Mint Chutney",
+      "description": "High protein, keto-friendly option crafted for health conscious patrons",
+      "price": 344,
+      "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": true,
+      "isKeto": false,
+      "calories": 642,
+      "protein": 9,
+      "carbohydrates": 77,
+      "fat": 29,
+      "allergens": [
+        "seafood"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-24",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-24",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-24",
+              "name": "Grande / Large Size",
+              "price": 103,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-24",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-24",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-24",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-24",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-24",
+      "categoryId": "cat-chaat",
+      "name": "Crispy Aloo Tikki Chaat",
+      "description": "Delicately seasoned, rich in taste, and beautifully presented",
+      "price": 595,
+      "image": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": true,
+      "calories": 299,
+      "protein": 18,
+      "carbohydrates": 83,
+      "fat": 25,
+      "allergens": [
+        "soy"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-25",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-25",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-25",
+              "name": "Grande / Large Size",
+              "price": 179,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-25",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-25",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-25",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-25",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-25",
+      "categoryId": "cat-drinks",
+      "name": "Saffron Cardamom Cappuccino",
+      "description": "Gourmet preparation using finest handpicked ingredients",
+      "price": 321,
+      "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": true,
+      "isGlutenFree": true,
+      "isKeto": true,
+      "calories": 236,
+      "protein": 18,
+      "carbohydrates": 40,
+      "fat": 22,
+      "allergens": [
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-26",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-26",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-26",
+              "name": "Grande / Large Size",
+              "price": 96,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-26",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-26",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-26",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-26",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-26",
+      "categoryId": "cat-drinks",
+      "name": "DineOps Masala Cutting Chai",
+      "description": "Artisan crafted for premium luxury dining and rich texture",
+      "price": 764,
+      "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 630,
+      "protein": 28,
+      "carbohydrates": 21,
+      "fat": 18,
+      "allergens": [
+        "gluten"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-27",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-27",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-27",
+              "name": "Grande / Large Size",
+              "price": 229,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-27",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-27",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-27",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-27",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-27",
+      "categoryId": "cat-drinks",
+      "name": "Mango Lassi Cardamom Cooler",
+      "description": "A perfect balance of organic flavors, calories, and visual charm",
+      "price": 495,
+      "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 146,
+      "protein": 11,
+      "carbohydrates": 38,
+      "fat": 6,
+      "allergens": [
+        "nuts",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-28",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-28",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-28",
+              "name": "Grande / Large Size",
+              "price": 149,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-28",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-28",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-28",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-28",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-28",
+      "categoryId": "cat-drinks",
+      "name": "Nimbu Masala Botanical Fizz",
+      "description": "A customer favorite, freshly prepared by our specialty chef",
+      "price": 305,
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": true,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 679,
+      "protein": 33,
+      "carbohydrates": 10,
+      "fat": 24,
+      "allergens": [],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-29",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-29",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-29",
+              "name": "Grande / Large Size",
+              "price": 92,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-29",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-29",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-29",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-29",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-29",
+      "categoryId": "cat-drinks",
+      "name": "DineOps Signature Cold Brew",
+      "description": "High protein, keto-friendly option crafted for health conscious patrons",
+      "price": 785,
+      "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": true,
+      "isKeto": false,
+      "calories": 616,
+      "protein": 34,
+      "carbohydrates": 26,
+      "fat": 8,
+      "allergens": [
+        "seafood"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-30",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-30",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-30",
+              "name": "Grande / Large Size",
+              "price": 236,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-30",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-30",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-30",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-30",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-30",
+      "categoryId": "cat-drinks",
+      "name": "Sweet Badam Kesari Milk",
+      "description": "Delicately seasoned, rich in taste, and beautifully presented",
+      "price": 800,
+      "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": true,
+      "calories": 137,
+      "protein": 18,
+      "carbohydrates": 21,
+      "fat": 11,
+      "allergens": [
+        "soy"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-31",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-31",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-31",
+              "name": "Grande / Large Size",
+              "price": 240,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-31",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-31",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-31",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-31",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-31",
+      "categoryId": "cat-desserts",
+      "name": "Classic Espresso Tiramisu",
+      "description": "Gourmet preparation using finest handpicked ingredients",
+      "price": 846,
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": true,
+      "isGlutenFree": true,
+      "isKeto": true,
+      "calories": 452,
+      "protein": 10,
+      "carbohydrates": 49,
+      "fat": 29,
+      "allergens": [
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-32",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-32",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-32",
+              "name": "Grande / Large Size",
+              "price": 254,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-32",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-32",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-32",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-32",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-32",
+      "categoryId": "cat-desserts",
+      "name": "Saffron Rabri Rasmalai Deluxe",
+      "description": "Artisan crafted for premium luxury dining and rich texture",
+      "price": 220,
+      "image": "https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 166,
+      "protein": 17,
+      "carbohydrates": 54,
+      "fat": 20,
+      "allergens": [
+        "gluten"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-33",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-33",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-33",
+              "name": "Grande / Large Size",
+              "price": 66,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-33",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-33",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-33",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-33",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-33",
+      "categoryId": "cat-desserts",
+      "name": "Warm Chocolate Lava Cake with Gelato",
+      "description": "A perfect balance of organic flavors, calories, and visual charm",
+      "price": 634,
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 411,
+      "protein": 37,
+      "carbohydrates": 77,
+      "fat": 7,
+      "allergens": [
+        "nuts",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isTrending": false,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-34",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-34",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-34",
+              "name": "Grande / Large Size",
+              "price": 190,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-34",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-34",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-34",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-34",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-34",
+      "categoryId": "cat-desserts",
+      "name": "Kesar Kulfi Falooda Bowl",
+      "description": "A customer favorite, freshly prepared by our specialty chef",
+      "price": 892,
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": true,
+      "isGlutenFree": false,
+      "isKeto": false,
+      "calories": 390,
+      "protein": 21,
+      "carbohydrates": 64,
+      "fat": 28,
+      "allergens": [],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-35",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-35",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-35",
+              "name": "Grande / Large Size",
+              "price": 268,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-35",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-35",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-35",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-35",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-35",
+      "categoryId": "cat-desserts",
+      "name": "Hot Jalebi with Saffron Rabri",
+      "description": "High protein, keto-friendly option crafted for health conscious patrons",
+      "price": 814,
+      "image": "https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": true,
+      "isKeto": false,
+      "calories": 263,
+      "protein": 34,
+      "carbohydrates": 60,
+      "fat": 12,
+      "allergens": [
+        "seafood"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-36",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-36",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-36",
+              "name": "Grande / Large Size",
+              "price": 244,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-36",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-36",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-36",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-36",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-36",
+      "categoryId": "cat-desserts",
+      "name": "Creamy New York Cheesecake",
+      "description": "Delicately seasoned, rich in taste, and beautifully presented",
+      "price": 526,
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&auto=format&fit=crop",
+      "isVeg": true,
+      "isVegan": false,
+      "isGlutenFree": false,
+      "isKeto": true,
+      "calories": 125,
+      "protein": 8,
+      "carbohydrates": 61,
+      "fat": 7,
+      "allergens": [
+        "soy"
+      ],
+      "isPopular": false,
+      "isTrending": true,
+      "active": true,
+      "customizations": [
+        {
+          "id": "custom-gp-1-37",
+          "name": "Select Portion Size",
+          "minSelect": 1,
+          "maxSelect": 1,
+          "options": [
+            {
+              "id": "opt-1-37",
+              "name": "Regular Size",
+              "price": 0,
+              "isDefault": true
+            },
+            {
+              "id": "opt-2-37",
+              "name": "Grande / Large Size",
+              "price": 158,
+              "isDefault": false
+            }
+          ]
+        },
+        {
+          "id": "custom-gp-2-37",
+          "name": "Add Extra Toppings",
+          "minSelect": 0,
+          "maxSelect": 4,
+          "options": [
+            {
+              "id": "opt-3-37",
+              "name": "Truffle Drizzle",
+              "price": 80,
+              "isDefault": false
+            },
+            {
+              "id": "opt-4-37",
+              "name": "Extra Cheddar Cheese",
+              "price": 50,
+              "isDefault": false
+            },
+            {
+              "id": "opt-5-37",
+              "name": "Gourmet Mushrooms",
+              "price": 70,
+              "isDefault": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "id": "br-1",
+      "name": "Downtown flagship",
+      "address": "456 Luxury Blvd",
+      "city": "Mumbai",
+      "phone": "+919999999001",
+      "active": true
+    },
+    {
+      "id": "br-2",
+      "name": "Uptown Mall",
+      "address": "Galleria Mall Floor 3",
+      "city": "Delhi NCR",
+      "phone": "+919999999002",
+      "active": true
+    },
+    {
+      "id": "br-3",
+      "name": "Airport T3 Express",
+      "address": "Departure Terminal 3 Food Court",
+      "city": "Delhi",
+      "phone": "+919999999003",
+      "active": true
+    },
+    {
+      "id": "br-4",
+      "name": "CloudKitchen East",
+      "address": "Sector 5 Business Park",
+      "city": "Bengaluru",
+      "phone": "+919999999004",
+      "active": true
+    }
+  ],
+  "tables": [
+    {
+      "id": "tab-1-1",
+      "branchId": "br-1",
+      "tableNumber": "101",
+      "capacity": 2,
+      "status": "AVAILABLE",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-101-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-2",
+      "branchId": "br-1",
+      "tableNumber": "102",
+      "capacity": 4,
+      "status": "AVAILABLE",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-102-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-3",
+      "branchId": "br-1",
+      "tableNumber": "103",
+      "capacity": 2,
+      "status": "OCCUPIED",
+      "waiterNeeded": true,
+      "billRequested": false,
+      "qrCode": "TABLE-1-103-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-4",
+      "branchId": "br-1",
+      "tableNumber": "104",
+      "capacity": 4,
+      "status": "AVAILABLE",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-104-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-5",
+      "branchId": "br-1",
+      "tableNumber": "105",
+      "capacity": 2,
+      "status": "RESERVED",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-105-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-6",
+      "branchId": "br-1",
+      "tableNumber": "106",
+      "capacity": 4,
+      "status": "OCCUPIED",
+      "waiterNeeded": false,
+      "billRequested": true,
+      "qrCode": "TABLE-1-106-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-7",
+      "branchId": "br-1",
+      "tableNumber": "107",
+      "capacity": 2,
+      "status": "AVAILABLE",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-107-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-8",
+      "branchId": "br-1",
+      "tableNumber": "108",
+      "capacity": 4,
+      "status": "AVAILABLE",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-108-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-9",
+      "branchId": "br-1",
+      "tableNumber": "109",
+      "capacity": 2,
+      "status": "OCCUPIED",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-109-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-10",
+      "branchId": "br-1",
+      "tableNumber": "110",
+      "capacity": 4,
+      "status": "RESERVED",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-110-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-11",
+      "branchId": "br-1",
+      "tableNumber": "111",
+      "capacity": 2,
+      "status": "AVAILABLE",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-111-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-12",
+      "branchId": "br-1",
+      "tableNumber": "112",
+      "capacity": 4,
+      "status": "OCCUPIED",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-112-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-13",
+      "branchId": "br-1",
+      "tableNumber": "113",
+      "capacity": 2,
+      "status": "AVAILABLE",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-113-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-14",
+      "branchId": "br-1",
+      "tableNumber": "114",
+      "capacity": 4,
+      "status": "AVAILABLE",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-114-VERIFICATION-PAYLOAD"
+    },
+    {
+      "id": "tab-1-15",
+      "branchId": "br-1",
+      "tableNumber": "115",
+      "capacity": 2,
+      "status": "OCCUPIED",
+      "waiterNeeded": false,
+      "billRequested": false,
+      "qrCode": "TABLE-1-115-VERIFICATION-PAYLOAD"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-101",
+      "branchId": "br-1",
+      "customerId": "user-customer",
+      "orderNumber": "BH-2026-9042",
+      "status": "PREPARING",
+      "type": "DINE_IN",
+      "subtotal": 780,
+      "tax": 39,
+      "deliveryFee": 0,
+      "discount": 50,
+      "total": 769,
+      "paymentMethod": "UPI",
+      "paymentStatus": "PAID",
+      "paymentTransactionId": "TXN-UPI-87429184",
+      "cookingNotes": "Less spicy, medium rare sliders please.",
+      "tableId": "tab-1-3",
+      "createdAt": "2026-06-03T19:00:25.459Z",
+      "otpVerified": false,
+      "items": [
+        {
+          "menuItemId": "item-1",
+          "name": "DineOps Signature Cold Brew",
+          "quantity": 2,
+          "price": 180,
+          "subtotal": 360
+        },
+        {
+          "menuItemId": "item-11",
+          "name": "A5 Miyazaki Wagyu Sliders",
+          "quantity": 1,
+          "price": 420,
+          "subtotal": 420
+        }
+      ]
+    },
+    {
+      "id": "ord-102",
+      "branchId": "br-1",
+      "customerId": "user-customer",
+      "deliveryStaffId": "user-delivery",
+      "orderNumber": "BH-2026-9043",
+      "status": "READY",
+      "type": "DELIVERY",
+      "subtotal": 1040,
+      "tax": 52,
+      "deliveryFee": 60,
+      "discount": 100,
+      "total": 1052,
+      "paymentMethod": "CARD",
+      "paymentStatus": "PAID",
+      "paymentTransactionId": "TXN-CRD-10928420",
+      "deliveryAddress": "Apt 4B, Signature Residency, Lane 7, Powai, Mumbai",
+      "deliveryNotes": "Leave at lobby reception desk.",
+      "otp": "4820",
+      "otpVerified": false,
+      "createdAt": "2026-06-03T19:15:25.459Z",
+      "items": [
+        {
+          "menuItemId": "item-2",
+          "name": "Avocado Rose Sourdough Toast",
+          "quantity": 2,
+          "price": 340,
+          "subtotal": 680
+        },
+        {
+          "menuItemId": "item-31",
+          "name": "Warm Sourdough Loaf (Whole)",
+          "quantity": 1,
+          "price": 360,
+          "subtotal": 360
+        }
+      ]
+    },
+    {
+      "id": "ord-103",
+      "branchId": "br-1",
+      "customerId": "user-customer",
+      "orderNumber": "BH-2026-9044",
+      "status": "DELIVERED",
+      "type": "DELIVERY",
+      "subtotal": 450,
+      "tax": 22.5,
+      "deliveryFee": 40,
+      "discount": 0,
+      "total": 512.5,
+      "paymentMethod": "UPI",
+      "paymentStatus": "PAID",
+      "paymentTransactionId": "TXN-UPI-98427104",
+      "deliveryAddress": "9th Floor, Tech Hub Tower B, Hitec City",
+      "otp": "1159",
+      "otpVerified": true,
+      "createdAt": "2026-06-03T17:30:25.459Z",
+      "items": [
+        {
+          "menuItemId": "item-61",
+          "name": "Signature Lava Cake with Gelato",
+          "quantity": 1,
+          "price": 450,
+          "subtotal": 450
+        }
+      ]
+    }
+  ],
+  "inventoryItems": [
+    {
+      "id": "inv-1",
+      "branchId": "br-1",
+      "name": "Organic Sourdough Bread Flour",
+      "sku": "INV-FLR-001",
+      "quantity": 40,
+      "unit": "kg",
+      "minStockLevel": 20,
+      "supplierName": "Hindustan Fresh Foods Ltd",
+      "supplierEmail": "deliveries@hffoods.in",
+      "expiryDate": "2026-06-13T19:30:25.459Z"
+    },
+    {
+      "id": "inv-2",
+      "branchId": "br-1",
+      "name": "A5 Miyazaki Wagyu Beef",
+      "sku": "INV-BEEF-002",
+      "quantity": 9,
+      "unit": "kg",
+      "minStockLevel": 5,
+      "supplierName": "Hindustan Fresh Foods Ltd",
+      "supplierEmail": "deliveries@hffoods.in",
+      "expiryDate": "2026-06-18T19:30:25.459Z"
+    },
+    {
+      "id": "inv-3",
+      "branchId": "br-1",
+      "name": "Premium Arabica Coffee Beans",
+      "sku": "INV-COF-003",
+      "quantity": 20,
+      "unit": "kg",
+      "minStockLevel": 15,
+      "supplierName": "Hindustan Fresh Foods Ltd",
+      "supplierEmail": "deliveries@hffoods.in",
+      "expiryDate": "2026-06-23T19:30:25.459Z"
+    },
+    {
+      "id": "inv-4",
+      "branchId": "br-1",
+      "name": "Aged Truffle Infused Olive Oil",
+      "sku": "INV-OIL-004",
+      "quantity": 3,
+      "unit": "liters",
+      "minStockLevel": 2,
+      "supplierName": "Hindustan Fresh Foods Ltd",
+      "supplierEmail": "deliveries@hffoods.in",
+      "expiryDate": "2026-06-28T19:30:25.459Z"
+    },
+    {
+      "id": "inv-5",
+      "branchId": "br-1",
+      "name": "Fresh Norwegian Salmon Fillets",
+      "sku": "INV-FISH-005",
+      "quantity": 21,
+      "unit": "kg",
+      "minStockLevel": 8,
+      "supplierName": "Hindustan Fresh Foods Ltd",
+      "supplierEmail": "deliveries@hffoods.in",
+      "expiryDate": "2026-07-03T19:30:25.459Z"
+    },
+    {
+      "id": "inv-6",
+      "branchId": "br-1",
+      "name": "Belgian Dark Chocolate Chips",
+      "sku": "INV-CHO-006",
+      "quantity": 22,
+      "unit": "kg",
+      "minStockLevel": 10,
+      "supplierName": "Hindustan Fresh Foods Ltd",
+      "supplierEmail": "deliveries@hffoods.in",
+      "expiryDate": "2026-07-08T19:30:25.459Z"
+    },
+    {
+      "id": "inv-7",
+      "branchId": "br-1",
+      "name": "Fresh Hass Avocados",
+      "sku": "INV-AVO-007",
+      "quantity": 144,
+      "unit": "units",
+      "minStockLevel": 50,
+      "supplierName": "Hindustan Fresh Foods Ltd",
+      "supplierEmail": "deliveries@hffoods.in",
+      "expiryDate": "2026-07-13T19:30:25.459Z"
+    },
+    {
+      "id": "inv-8",
+      "branchId": "br-1",
+      "name": "Organic Baby Spinach & Greens",
+      "sku": "INV-VEG-008",
+      "quantity": 16,
+      "unit": "kg",
+      "minStockLevel": 12,
+      "supplierName": "Hindustan Fresh Foods Ltd",
+      "supplierEmail": "deliveries@hffoods.in",
+      "expiryDate": "2026-07-18T19:30:25.459Z"
+    },
+    {
+      "id": "inv-9",
+      "branchId": "br-1",
+      "name": "Gourmet Oyster Mushrooms",
+      "sku": "INV-MUSH-009",
+      "quantity": 6,
+      "unit": "kg",
+      "minStockLevel": 5,
+      "supplierName": "Hindustan Fresh Foods Ltd",
+      "supplierEmail": "deliveries@hffoods.in",
+      "expiryDate": "2026-07-23T19:30:25.459Z"
+    },
+    {
+      "id": "inv-10",
+      "branchId": "br-1",
+      "name": "Farm Fresh Organic Eggs",
+      "sku": "INV-EGGS-010",
+      "quantity": 246,
+      "unit": "units",
+      "minStockLevel": 200,
+      "supplierName": "Hindustan Fresh Foods Ltd",
+      "supplierEmail": "deliveries@hffoods.in",
+      "expiryDate": "2026-07-28T19:30:25.459Z"
+    }
+  ],
+  "staffShifts": [
+    {
+      "id": "sh-1",
+      "userId": "user-chef",
+      "branchId": "br-1",
+      "startTime": "2026-06-04T03:30:25.459Z",
+      "endTime": "2026-06-04T11:30:25.459Z",
+      "checkIn": "2026-06-04T03:25:25.459Z",
+      "status": "ACTIVE",
+      "hourlyRate": 450
+    },
+    {
+      "id": "sh-2",
+      "userId": "user-staff",
+      "branchId": "br-1",
+      "startTime": "2026-06-04T03:30:25.459Z",
+      "endTime": "2026-06-04T11:30:25.459Z",
+      "checkIn": "2026-06-04T03:30:25.459Z",
+      "status": "ACTIVE",
+      "hourlyRate": 200
+    },
+    {
+      "id": "sh-3",
+      "userId": "user-cashier",
+      "branchId": "br-1",
+      "startTime": "2026-06-04T03:00:25.459Z",
+      "endTime": "2026-06-04T11:00:25.459Z",
+      "checkIn": "2026-06-04T02:55:25.459Z",
+      "status": "ACTIVE",
+      "hourlyRate": 250
+    },
+    {
+      "id": "sh-4",
+      "userId": "user-delivery",
+      "branchId": "br-1",
+      "startTime": "2026-06-04T05:30:25.459Z",
+      "endTime": "2026-06-04T13:30:25.459Z",
+      "status": "SCHEDULED",
+      "hourlyRate": 150
+    },
+    {
+      "id": "sh-1780515072358-user-superadmin",
+      "userId": "user-superadmin",
+      "branchId": "br-1",
+      "startTime": "2026-06-04T03:30:00.000Z",
+      "endTime": "2026-06-04T11:30:00.000Z",
+      "status": "SCHEDULED",
+      "hourlyRate": 200
+    },
+    {
+      "id": "sh-1780515072358-user-admin",
+      "userId": "user-admin",
+      "branchId": "br-1",
+      "startTime": "2026-06-04T03:30:00.000Z",
+      "endTime": "2026-06-04T11:30:00.000Z",
+      "status": "SCHEDULED",
+      "hourlyRate": 350
+    },
+    {
+      "id": "sh-1780515072358-user-manager",
+      "userId": "user-manager",
+      "branchId": "br-1",
+      "startTime": "2026-06-04T03:30:00.000Z",
+      "endTime": "2026-06-04T11:30:00.000Z",
+      "status": "SCHEDULED",
+      "hourlyRate": 200
+    },
+    {
+      "id": "sh-1780515072358-user-support",
+      "userId": "user-support",
+      "branchId": "br-1",
+      "startTime": "2026-06-04T03:30:00.000Z",
+      "endTime": "2026-06-04T11:30:00.000Z",
+      "status": "SCHEDULED",
+      "hourlyRate": 200
+    }
+  ],
+  "users": [
+    {
+      "id": "user-superadmin",
+      "email": "admin@admin",
+      "name": "Vishal Soni",
+      "role": "SUPER_ADMIN",
+      "password": "admin",
+      "cashbackBalance": 0,
+      "loyaltyPoints": 5000,
+      "loyaltyTier": "PLATINUM",
+      "allergies": [],
+      "addresses": [
+        {
+          "id": "addr-1",
+          "label": "Home",
+          "address": "",
+          "city": "",
+          "isDefault": true
+        },
+        {
+          "id": "addr-2",
+          "label": "Office",
+          "address": "",
+          "city": "",
+          "isDefault": false
+        }
+      ],
+      "birthDate": null,
+      "anniversaryDate": null
+    },
+    {
+      "id": "user-admin",
+      "email": "admin@dineops.com",
+      "name": "Rajesh Sharma",
+      "role": "ADMIN",
+      "password": "password123",
+      "cashbackBalance": 0,
+      "loyaltyPoints": 200,
+      "loyaltyTier": "SILVER",
+      "allergies": [],
+      "addresses": [
+        {
+          "id": "addr-1",
+          "label": "Home",
+          "address": "",
+          "city": "",
+          "isDefault": true
+        },
+        {
+          "id": "addr-2",
+          "label": "Office",
+          "address": "",
+          "city": "",
+          "isDefault": false
+        }
+      ],
+      "birthDate": null,
+      "anniversaryDate": null
+    },
+    {
+      "id": "user-manager",
+      "email": "manager@dineops.com",
+      "name": "Simran Kaur",
+      "role": "BRANCH_MANAGER",
+      "password": "password123",
+      "cashbackBalance": 0,
+      "loyaltyPoints": 150,
+      "loyaltyTier": "BRONZE",
+      "allergies": [],
+      "addresses": [],
+      "birthDate": null,
+      "anniversaryDate": null
+    },
+    {
+      "id": "user-chef",
+      "email": "chef@dineops.com",
+      "name": "Chef Marco D'Souza",
+      "role": "CHEF",
+      "password": "password123",
+      "cashbackBalance": 0,
+      "loyaltyPoints": 300,
+      "loyaltyTier": "SILVER",
+      "allergies": [],
+      "addresses": [],
+      "birthDate": null,
+      "anniversaryDate": null
+    },
+    {
+      "id": "user-staff",
+      "email": "staff@dineops.com",
+      "name": "Amit Verma",
+      "role": "KITCHEN_STAFF",
+      "password": "password123",
+      "cashbackBalance": 0,
+      "loyaltyPoints": 100,
+      "loyaltyTier": "BRONZE",
+      "allergies": [],
+      "addresses": [],
+      "birthDate": null,
+      "anniversaryDate": null
+    },
+    {
+      "id": "user-cashier",
+      "email": "cashier@dineops.com",
+      "name": "Sneha Gupta",
+      "role": "CASHIER",
+      "password": "password123",
+      "cashbackBalance": 0,
+      "loyaltyPoints": 100,
+      "loyaltyTier": "BRONZE",
+      "allergies": [],
+      "addresses": [],
+      "birthDate": null,
+      "anniversaryDate": null
+    },
+    {
+      "id": "user-delivery",
+      "email": "delivery@dineops.com",
+      "name": "Rahul Yadav",
+      "role": "DELIVERY_STAFF",
+      "password": "password123",
+      "cashbackBalance": 0,
+      "loyaltyPoints": 100,
+      "loyaltyTier": "BRONZE",
+      "allergies": [],
+      "addresses": [],
+      "birthDate": null,
+      "anniversaryDate": null
+    },
+    {
+      "id": "user-support",
+      "email": "support@dineops.com",
+      "name": "Divya Rao",
+      "role": "SUPPORT_STAFF",
+      "password": "password123",
+      "cashbackBalance": 0,
+      "loyaltyPoints": 100,
+      "loyaltyTier": "BRONZE",
+      "allergies": [],
+      "addresses": [],
+      "birthDate": null,
+      "anniversaryDate": null
+    },
+    {
+      "id": "user-customer",
+      "email": "customer@dineops.com",
+      "name": "Vishaal Kumar",
+      "role": "CUSTOMER",
+      "password": "password123",
+      "cashbackBalance": 0,
+      "loyaltyPoints": 180,
+      "loyaltyTier": "SILVER",
+      "allergies": [
+        "nuts"
+      ],
+      "addresses": [
+        {
+          "id": "addr-1",
+          "label": "Home",
+          "address": "45/B West End Road, Bandra West",
+          "city": "Mumbai",
+          "isDefault": true
+        },
+        {
+          "id": "addr-2",
+          "label": "Office",
+          "address": "Building 4, Naman Chambers, BKC",
+          "city": "Mumbai",
+          "isDefault": false
+        }
+      ],
+      "birthDate": "1995-08-15",
+      "anniversaryDate": "2022-04-18"
+    },
+    {
+      "id": "user-1780515195896",
+      "email": "soni@gmail.com",
+      "password": "$2b$10$RutgtmxBBKkQnHXu7mQNfuXBMmF9Q3HTRVf7Ol6Q6k7A3d5YZuCla",
+      "name": "Soni",
+      "role": "CUSTOMER",
+      "createdAt": "2026-06-03T19:33:15.896Z",
+      "cashbackBalance": 2000,
+      "loyaltyPoints": 100,
+      "loyaltyTier": "BRONZE",
+      "addresses": [
+        {
+          "id": "addr-1",
+          "label": "Home",
+          "address": "",
+          "city": "",
+          "isDefault": true
+        },
+        {
+          "id": "addr-2",
+          "label": "Office",
+          "address": "",
+          "city": "",
+          "isDefault": false
+        }
+      ],
+      "allergies": [],
+      "birthDate": null,
+      "anniversaryDate": null,
+      "notifications": [
+        {
+          "id": "notif-1780515204595-72",
+          "title": "🎁 Gift Wallet Credit Received!",
+          "body": "A friend sent you a ₹2000 gift voucher! ₹2000 has been credited to your DineOps Wallet.",
+          "time": "Just now"
+        }
+      ]
+    }
+  ],
+  "reservations": [
+    {
+      "id": "res-1-user-superadmin",
+      "userId": "user-superadmin",
+      "tableId": "tab-1-1",
+      "guestCount": 2,
+      "reservationDate": "2026-06-04T19:30:25.459Z",
+      "timeSlot": "19:00-20:30",
+      "status": "CONFIRMED",
+      "notes": "Anniversary celebration. Prefer quiet spot."
+    },
+    {
+      "id": "res-1-user-admin",
+      "userId": "user-admin",
+      "tableId": "tab-1-1",
+      "guestCount": 2,
+      "reservationDate": "2026-06-04T19:30:25.459Z",
+      "timeSlot": "19:00-20:30",
+      "status": "CONFIRMED",
+      "notes": "Anniversary celebration. Prefer quiet spot."
+    },
+    {
+      "id": "res-1-user-manager",
+      "userId": "user-manager",
+      "tableId": "tab-1-1",
+      "guestCount": 2,
+      "reservationDate": "2026-06-04T19:30:25.459Z",
+      "timeSlot": "19:00-20:30",
+      "status": "CONFIRMED",
+      "notes": "Anniversary celebration. Prefer quiet spot."
+    },
+    {
+      "id": "res-1-user-chef",
+      "userId": "user-chef",
+      "tableId": "tab-1-1",
+      "guestCount": 2,
+      "reservationDate": "2026-06-04T19:30:25.459Z",
+      "timeSlot": "19:00-20:30",
+      "status": "CONFIRMED",
+      "notes": "Anniversary celebration. Prefer quiet spot."
+    },
+    {
+      "id": "res-1-user-staff",
+      "userId": "user-staff",
+      "tableId": "tab-1-1",
+      "guestCount": 2,
+      "reservationDate": "2026-06-04T19:30:25.459Z",
+      "timeSlot": "19:00-20:30",
+      "status": "CONFIRMED",
+      "notes": "Anniversary celebration. Prefer quiet spot."
+    },
+    {
+      "id": "res-1-user-cashier",
+      "userId": "user-cashier",
+      "tableId": "tab-1-1",
+      "guestCount": 2,
+      "reservationDate": "2026-06-04T19:30:25.459Z",
+      "timeSlot": "19:00-20:30",
+      "status": "CONFIRMED",
+      "notes": "Anniversary celebration. Prefer quiet spot."
+    },
+    {
+      "id": "res-1-user-delivery",
+      "userId": "user-delivery",
+      "tableId": "tab-1-1",
+      "guestCount": 2,
+      "reservationDate": "2026-06-04T19:30:25.459Z",
+      "timeSlot": "19:00-20:30",
+      "status": "CONFIRMED",
+      "notes": "Anniversary celebration. Prefer quiet spot."
+    },
+    {
+      "id": "res-1-user-support",
+      "userId": "user-support",
+      "tableId": "tab-1-1",
+      "guestCount": 2,
+      "reservationDate": "2026-06-04T19:30:25.459Z",
+      "timeSlot": "19:00-20:30",
+      "status": "CONFIRMED",
+      "notes": "Anniversary celebration. Prefer quiet spot."
+    },
+    {
+      "id": "res-1-user-customer",
+      "userId": "user-customer",
+      "tableId": "tab-1-1",
+      "guestCount": 2,
+      "reservationDate": "2026-06-04T19:30:25.459Z",
+      "timeSlot": "19:00-20:30",
+      "status": "CONFIRMED",
+      "notes": "Anniversary celebration. Prefer quiet spot."
+    }
+  ],
+  "giftCards": [
+    {
+      "id": "gc-1",
+      "code": "BH-GIFT-8942-LUX",
+      "userId": "user-customer",
+      "initialBalance": 2000,
+      "currentBalance": 1450,
+      "active": true,
+      "message": "Exclusive Gift Card!",
+      "expiresAt": "2027-06-03T00:00:00.000Z"
+    },
+    {
+      "id": "gc-1780515204595",
+      "code": "BH-GIFT-7465",
+      "senderId": "user-1780514577060",
+      "recipientId": "user-1780515195896",
+      "recipientEmail": "soni@gmail.com",
+      "amount": 2000,
+      "active": true,
+      "createdAt": "2026-06-03T19:33:24.595Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "cp-1",
+      "code": "BREWFIRST",
+      "discountType": "PERCENTAGE",
+      "value": 20,
+      "minOrderValue": 300,
+      "maxDiscount": 150,
+      "expiresAt": "2027-12-31T00:00:00.000Z",
+      "active": true
+    },
+    {
+      "id": "cp-2",
+      "code": "LUXURY50",
+      "discountType": "FIXED",
+      "value": 50,
+      "minOrderValue": 200,
+      "expiresAt": "2027-12-31T00:00:00.000Z",
+      "active": true
+    },
+    {
+      "id": "cp-3",
+      "code": "CHEFSPECIAL",
+      "discountType": "PERCENTAGE",
+      "value": 15,
+      "minOrderValue": 500,
+      "maxDiscount": 200,
+      "expiresAt": "2027-12-31T00:00:00.000Z",
+      "active": true
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "sub-1",
+      "userId": "user-customer",
+      "planName": "Monthly Student Meal Plan",
+      "active": true,
+      "startDate": "2026-06-03T19:30:25.459Z",
+      "endDate": "2026-07-03T19:30:25.459Z",
+      "mealsTotal": 30,
+      "mealsUsed": 4,
+      "pricePaid": 4500
+    }
+  ],
+  "auditLogs": [],
+  "reviews": []
+}
