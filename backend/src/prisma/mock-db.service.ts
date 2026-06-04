@@ -46,7 +46,7 @@ export interface MockTable {
   branchId: string;
   tableNumber: string;
   capacity: number;
-  status: 'AVAILABLE' | 'OCCUPIED' | 'RESERVED';
+  status: 'AVAILABLE' | 'OCCUPIED' | 'RESERVED' | 'LOCKED';
   waiterNeeded: boolean;
   billRequested: boolean;
   qrCode?: string;
@@ -218,39 +218,48 @@ export class MockDbService {
 
     // Seed Categories
     this.categories = [
-      { id: 'cat-breakfast', name: 'Breakfast Specials', description: 'Morning dosas, fluffy blueberry pancakes, and light starters', image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&auto=format&fit=crop&q=80', sortOrder: 1 },
-      { id: 'cat-italian', name: 'Italian & Pastas', description: 'Wood-fired pizzas, slow-cooked lasagna, and creamy fettuccine', image: 'https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=500&auto=format&fit=crop&q=80', sortOrder: 2 },
-      { id: 'cat-grill', name: 'Gourmet Burgers & Grills', description: 'A5 Miyazaki Wagyu sliders, chicken wings, and grilled steaks', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=80', sortOrder: 3 },
-      { id: 'cat-chaat', name: 'Artisan Indian Chaat', description: 'Tangy golgappas, crispy samosa chaat, and pav bhaji platters', image: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop&q=80', sortOrder: 4 },
-      { id: 'cat-drinks', name: 'Hot Coffee & Beverages', description: 'Saffron cardamom cappuccino, cutting chai, and coolers', image: 'https://images.unsplash.com/photo-1534778101976-62847782c213?w=500&auto=format&fit=crop&q=80', sortOrder: 5 },
-      { id: 'cat-desserts', name: 'Sweet Endings', description: 'Classic tiramisu, saffron rabri rasmalai, and lava cakes', image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&auto=format&fit=crop&q=80', sortOrder: 6 },
+      { id: 'cat-breakfast', name: 'Breakfast Specials', description: 'Morning dosas, premium chole bhature, fluffy pancakes, and light starters', image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&auto=format&fit=crop&q=80', sortOrder: 1 },
+      { id: 'cat-italian', name: 'European & Pastas', description: 'Wood-fired pizzas, pan-seared salmon, and artisanal pastas', image: 'https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=500&auto=format&fit=crop&q=80', sortOrder: 2 },
+      { id: 'cat-grill', name: 'Gourmet Burgers & Grills', description: 'A5 Miyazaki Wagyu sliders, smoked chicken wings, and steaks', image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=80', sortOrder: 3 },
+      { id: 'cat-meals', name: 'Executive Indian Meals', description: 'Gourmet curry platters, rajma chawal, tikkas, and butter naan combo meals', image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80', sortOrder: 4 },
+      { id: 'cat-chaat', name: 'Artisan Indian Chaat', description: 'Tangy golgappas, crispy aloo tikki, vada pav, and classic street style bhel puri', image: 'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop&q=80', sortOrder: 5 },
+      { id: 'cat-chinese', name: 'Indo-Chinese Fusions', description: 'Fiery Hakka noodles, crispy spring rolls, and veg manchurian', image: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500&auto=format&fit=crop&q=80', sortOrder: 6 },
+      { id: 'cat-drinks', name: 'Beverages & Coolers', description: 'Masala cutting chai, mango lassi coolers, botanical mint mojitos, and badam kesari milk', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=80', sortOrder: 7 },
+      { id: 'cat-desserts', name: 'Sweet Endings', description: 'Espresso tiramisu, kulfi falooda, New York cheesecake, and saffron rabri rasmalai', image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&auto=format&fit=crop&q=80', sortOrder: 8 },
     ];
 
     // Seed Menu Items (Hybrid Western-Indian Selection)
     const foodNames = {
       'cat-breakfast': [
-        'Masala Dosa Combo with Podi', 'Fluffy Blueberry Pancakes', 'Idli Sambar Ghee Roast Plate', 'Smoked Salmon Eggs Benedict',
-        'Rava Upma Bowl with Cashews', 'Homestyle Stuffed Aloo Paratha'
+        'Masala Dosa Combo with Podi', 'Chole Bhature Premium Outlets', 'Idli Sambar Ghee Roast Plate', 
+        'Rava Upma Bowl with Cashews', 'Homestyle Stuffed Aloo Paratha', 'Fluffy Blueberry Pancakes', 'French Croissants and Jam'
       ],
       'cat-italian': [
-        'Truffle Mushroom Fettuccine Alfredo', 'Wood-fired Margherita Pizza', 'Slow-cooked Bolognese Lasagna', 'Pesto Genovese Penne Pasta',
-        'Four-Cheese Gorgonzola Gnocchi', 'Spaghetti Carbonara Premium'
+        'Pan-Seared Salmon with Asparagus', 'Truffle Mushroom Fettuccine Alfredo', 'Wood-fired Margherita Pizza', 
+        'Pesto Genovese Penne Pasta', 'Four-Cheese Gorgonzola Gnocchi', 'Spaghetti Carbonara Premium'
       ],
       'cat-grill': [
         'A5 Miyazaki Wagyu Sliders', 'Classic Caesar Salad with Chicken', 'Gourmet Cottage Cheese Steak', 'Smoked BBQ Chicken Wings',
         'Flame-broiled Ribeye Steak', 'DineOps Signature Chicken Club'
       ],
+      'cat-meals': [
+        'Rajma Chawal Executive Bowl', 'Shahi Paneer Butter Masala', 'Gourmet Butter Naan Basket (3pcs)', 
+        'Classic Chicken Tikka Platter', 'Spiced Paneer Tikka Kebab', 'Hyderabadi Dum Chicken Biryani', 'Royal Rajasthani Thali'
+      ],
       'cat-chaat': [
-        'Delhi Dahi Papdi Chaat Deluxe', 'Mumbai Special Vada Pav (2pcs)', 'Loaded Butter Pav Bhaji Platter', 'Spicy Pani Puri Golgappa Plate',
-        'Samosa Chaat Mint Chutney', 'Crispy Aloo Tikki Chaat'
+        'Mumbai Special Vada Pav (2pcs)', 'Delhi Dahi Papdi Chaat Deluxe', 'Spicy Pani Puri Golgappa Plate', 
+        'Samosa Chaat Mint Chutney', 'Crispy Aloo Tikki Chaat', 'Bhel Puri Street Style', 'Sev Puri Classic'
+      ],
+      'cat-chinese': [
+        'Hakka Noodles', 'Veg Manchurian', 'Crispy Spring Rolls'
       ],
       'cat-drinks': [
-        'Saffron Cardamom Cappuccino', 'DineOps Masala Cutting Chai', 'Mango Lassi Cardamom Cooler', 'Nimbu Masala Botanical Fizz',
-        'DineOps Signature Cold Brew', 'Sweet Badam Kesari Milk'
+        'Saffron Cardamom Cappuccino', 'DineOps Masala Cutting Chai', 'Mango Lassi Cardamom Cooler', 
+        'Nimbu Masala Botanical Fizz', 'DineOps Signature Cold Brew', 'Sweet Badam Kesari Milk', 'Classic Mint Mojito'
       ],
       'cat-desserts': [
-        'Classic Espresso Tiramisu', 'Saffron Rabri Rasmalai Deluxe', 'Warm Chocolate Lava Cake with Gelato', 'Kesar Kulfi Falooda Bowl',
-        'Hot Jalebi with Saffron Rabri', 'Creamy New York Cheesecake'
+        'Classic Espresso Tiramisu', 'Saffron Rabri Rasmalai Deluxe', 'Warm Chocolate Lava Cake with Gelato', 
+        'Kesar Kulfi Falooda Bowl', 'Hot Jalebi with Saffron Rabri', 'Creamy New York Cheesecake'
       ]
     };
 
@@ -289,7 +298,7 @@ export class MockDbService {
           name,
           description: foodDescriptions[index % foodDescriptions.length],
           price,
-          image: this.getMenuImage(catId, index),
+          image: this.getMenuImage(catId, name),
           isVeg,
           isVegan,
           isGlutenFree,
@@ -525,49 +534,76 @@ export class MockDbService {
     ];
   }
 
-  private getMenuImage(catId: string, index: number): string {
-    const images: Record<string, string[]> = {
-      'cat-breakfast': [
-        'https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500&auto=format&fit=crop'
-      ],
-      'cat-italian': [
-        'https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1598866594230-a7c12756260f?w=500&auto=format&fit=crop'
-      ],
-      'cat-grill': [
-        'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500&auto=format&fit=crop'
-      ],
-      'cat-chaat': [
-        'https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop'
-      ],
-      'cat-drinks': [
-        'https://images.unsplash.com/photo-1534778101976-62847782c213?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop'
-      ],
-      'cat-desserts': [
-        'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=500&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&auto=format&fit=crop'
-      ]
+  private getMenuImage(catId: string, name: string): string {
+    const lookup: Record<string, string> = {
+      // Breakfast Specials
+      'Masala Dosa Combo with Podi': '/menu/masala-dosa.png',
+      'Chole Bhature Premium Outlets': 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+      'Idli Sambar Ghee Roast Plate': 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=80',
+      'Rava Upma Bowl with Cashews': '/menu/rava-upma.png',
+      'Homestyle Stuffed Aloo Paratha': '/menu/aloo-paratha.png',
+      'Fluffy Blueberry Pancakes': 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&auto=format&fit=crop&q=80',
+      'French Croissants and Jam': 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&auto=format&fit=crop&q=80',
+
+      // European & Pastas
+      'Pan-Seared Salmon with Asparagus': 'https://images.unsplash.com/photo-1485921325833-c519f76c4927?w=500&auto=format&fit=crop&q=80',
+      'Truffle Mushroom Fettuccine Alfredo': 'https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=500&auto=format&fit=crop&q=80',
+      'Wood-fired Margherita Pizza': '/menu/margherita-pizza.png',
+      'Pesto Genovese Penne Pasta': '/menu/pesto-penne.png',
+      'Four-Cheese Gorgonzola Gnocchi': '/menu/gnocchi.png',
+      'Spaghetti Carbonara Premium': 'https://images.unsplash.com/photo-1612874742237-6526221588e3?w=500&auto=format&fit=crop&q=80',
+
+      // Gourmet Burgers & Grills
+      'A5 Miyazaki Wagyu Sliders': '/menu/wagyu-sliders.png',
+      'Classic Caesar Salad with Chicken': 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=500&auto=format&fit=crop&q=80',
+      'Gourmet Cottage Cheese Steak': '/menu/paneer-steak.png',
+      'Smoked BBQ Chicken Wings': 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500&auto=format&fit=crop&q=80',
+      'Flame-broiled Ribeye Steak': 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=80',
+      'DineOps Signature Chicken Club': '/menu/chicken-club.png',
+
+      // Executive Indian Meals
+      'Rajma Chawal Executive Bowl': 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&auto=format&fit=crop&q=80',
+      'Shahi Paneer Butter Masala': '/menu/paneer-butter-masala.png',
+      'Gourmet Butter Naan Basket (3pcs)': 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&auto=format&fit=crop&q=80',
+      'Classic Chicken Tikka Platter': 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&auto=format&fit=crop&q=80',
+      'Spiced Paneer Tikka Kebab': 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500&auto=format&fit=crop&q=80',
+      'Hyderabadi Dum Chicken Biryani': 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&auto=format&fit=crop&q=80',
+      'Royal Rajasthani Thali': 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?w=500&auto=format&fit=crop&q=80',
+
+      // Artisan Indian Chaat
+      'Mumbai Special Vada Pav (2pcs)': 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&auto=format&fit=crop&q=80',
+      'Delhi Dahi Papdi Chaat Deluxe': '/menu/papdi-chaat.png',
+      'Spicy Pani Puri Golgappa Plate': 'https://images.unsplash.com/photo-1605333396915-47ed6b68a00e?w=500&auto=format&fit=crop&q=80',
+      'Samosa Chaat Mint Chutney': '/menu/samosa-chaat.png',
+      'Crispy Aloo Tikki Chaat': '/menu/papdi-chaat.png',
+      'Bhel Puri Street Style': '/menu/samosa-chaat.png',
+      'Sev Puri Classic': '/menu/papdi-chaat.png',
+
+      // Indo-Chinese Fusions
+      'Hakka Noodles': 'https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500&auto=format&fit=crop&q=80',
+      'Veg Manchurian': 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&auto=format&fit=crop&q=80',
+      'Crispy Spring Rolls': 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&auto=format&fit=crop&q=80',
+
+      // Beverages & Coolers
+      'Saffron Cardamom Cappuccino': 'https://images.unsplash.com/photo-1534778101976-62847782c213?w=500&auto=format&fit=crop&q=80',
+      'DineOps Masala Cutting Chai': '/menu/cutting-chai.png',
+      'Mango Lassi Cardamom Cooler': 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=500&auto=format&fit=crop&q=80',
+      'Nimbu Masala Botanical Fizz': 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=80',
+      'DineOps Signature Cold Brew': '/menu/cold-coffee.png',
+      'Sweet Badam Kesari Milk': 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&auto=format&fit=crop&q=80',
+      'Classic Mint Mojito': 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=80',
+
+      // Sweet Endings
+      'Classic Espresso Tiramisu': 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&auto=format&fit=crop&q=80',
+      'Saffron Rabri Rasmalai Deluxe': '/menu/rasmalai.png',
+      'Warm Chocolate Lava Cake with Gelato': 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&auto=format&fit=crop&q=80',
+      'Kesar Kulfi Falooda Bowl': 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&auto=format&fit=crop&q=80',
+      'Hot Jalebi with Saffron Rabri': '/menu/jalebi.png',
+      'Creamy New York Cheesecake': 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500&auto=format&fit=crop&q=80'
     };
-    const set = images[catId] || [
-      'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop'
-    ];
-    return set[index % set.length];
+    // Make sure A5 Miyazaki Wagyu Sliders resolves correctly too
+    lookup['A5 Miyazaki Wagyu Sliders'] = '/menu/wagyu-sliders.png';
+    return lookup[name] || 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&auto=format&fit=crop&q=80';
   }
 
   private getAllergens(index: number): string[] {

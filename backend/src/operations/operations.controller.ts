@@ -20,10 +20,11 @@ export class OperationsController {
   @Put('tables/:id/status')
   async updateTableStatus(
     @Param('id') id: string,
+    @Body('status') status?: string,
     @Body('waiterNeeded') waiterNeeded?: boolean,
     @Body('billRequested') billRequested?: boolean,
   ) {
-    return this.opsService.updateTableQR(id, { waiterNeeded, billRequested });
+    return this.opsService.updateTableQR(id, { status, waiterNeeded, billRequested });
   }
 
   // Inventory
@@ -121,4 +122,26 @@ export class OperationsController {
   async purchaseGiftVoucher(@Body() dto: any) {
     return this.opsService.purchaseGiftVoucher(dto);
   }
+
+  // Coupons
+  @Get('coupons')
+  async getCoupons() {
+    return this.opsService.getCoupons();
+  }
+
+  @Post('coupons')
+  async createCoupon(@Body() dto: any) {
+    return this.opsService.createCoupon(dto);
+  }
+
+  @Put('coupons/:id/toggle')
+  async toggleCoupon(@Param('id') id: string) {
+    return this.opsService.toggleCoupon(id);
+  }
+
+  @Delete('coupons/:id')
+  async deleteCoupon(@Param('id') id: string) {
+    return this.opsService.deleteCoupon(id);
+  }
 }
+

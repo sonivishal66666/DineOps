@@ -44,6 +44,7 @@ enum TableStatus {
   AVAILABLE
   OCCUPIED
   RESERVED
+  LOCKED
 }
 
 enum MovementType {

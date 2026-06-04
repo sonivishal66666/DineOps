@@ -61,7 +61,7 @@ export class OperationsService {
     }
   }
 
-  async updateTableQR(tableId: string, actions: { waiterNeeded?: boolean; billRequested?: boolean }) {
+  async updateTableQR(tableId: string, actions: { status?: any; waiterNeeded?: boolean; billRequested?: boolean }) {
     if (this.prisma.isConnected) {
       return this.prisma.table.update({
         where: { id: tableId },
@@ -70,8 +70,10 @@ export class OperationsService {
     } else {
       const idx = this.mockDb.tables.findIndex(t => t.id === tableId);
       if (idx === -1) throw new NotFoundException('Table not found');
+      if (actions.status !== undefined) this.mockDb.tables[idx].status = actions.status as any;
       if (actions.waiterNeeded !== undefined) this.mockDb.tables[idx].waiterNeeded = actions.waiterNeeded;
       if (actions.billRequested !== undefined) this.mockDb.tables[idx].billRequested = actions.billRequested;
+      this.mockDb.saveToDisk();
       return this.mockDb.tables[idx];
     }
   }
@@ -470,5 +472,47 @@ export class OperationsService {
       recipientName: recipient.name,
     };
   }
+
+  async getCoupons() {
+    return this.mockDb.coupons;
+  }
+
+  async createCoupon(dto: any) {
+    const { code, discountType, value, minOrderValue, maxDiscount, expiresAt } = dto;
+    const newCoupon = {
+      id: `cp-${Date.now()}`,
+      code: code.toUpperCase(),
+      discountType: discountType || 'PERCENTAGE',
+      value: Number(value),
+      minOrderValue: Number(minOrderValue || 0),
+      maxDiscount: maxDiscount ? Number(maxDiscount) : null,
+      expiresAt: expiresAt ? new Date(expiresAt) : new Date('2027-12-31'),
+      active: true,
+    };
+    this.mockDb.coupons.push(newCoupon);
+    this.mockDb.saveToDisk();
+    return newCoupon;
+  }
+
+  async toggleCoupon(id: string) {
+    const idx = this.mockDb.coupons.findIndex(c => c.id === id);
+    if (idx === -1) {
+      throw new NotFoundException(`Coupon with ID ${id} not found.`);
+    }
+    this.mockDb.coupons[idx].active = !this.mockDb.coupons[idx].active;
+    this.mockDb.saveToDisk();
+    return this.mockDb.coupons[idx];
+  }
+
+  async deleteCoupon(id: string) {
+    const idx = this.mockDb.coupons.findIndex(c => c.id === id);
+    if (idx === -1) {
+      throw new NotFoundException(`Coupon with ID ${id} not found.`);
+    }
+    const deleted = this.mockDb.coupons.splice(idx, 1);
+    this.mockDb.saveToDisk();
+    return { success: true, deleted: deleted[0] };
+  }
 }
+
 

@@ -39,7 +39,7 @@ export interface MockTable {
     branchId: string;
     tableNumber: string;
     capacity: number;
-    status: 'AVAILABLE' | 'OCCUPIED' | 'RESERVED';
+    status: 'AVAILABLE' | 'OCCUPIED' | 'RESERVED' | 'LOCKED';
     waiterNeeded: boolean;
     billRequested: boolean;
     qrCode?: string;

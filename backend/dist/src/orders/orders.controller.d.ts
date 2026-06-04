@@ -14,19 +14,19 @@ export declare class OrdersController {
             orderId: string;
         }[];
     } & {
+        deliveryStaffId: string | null;
         id: string;
         createdAt: Date;
         updatedAt: Date;
-        status: import("@prisma/client").$Enums.OrderStatus;
-        branchId: string;
-        deliveryStaffId: string | null;
         type: import("@prisma/client").$Enums.OrderType;
+        branchId: string;
         deliveryAddress: string | null;
         cookingNotes: string | null;
         deliveryNotes: string | null;
         paymentMethod: string;
         tableId: string | null;
         orderNumber: string;
+        status: import("@prisma/client").$Enums.OrderStatus;
         subtotal: import("@prisma/client/runtime/library").Decimal;
         tax: import("@prisma/client/runtime/library").Decimal;
         deliveryFee: import("@prisma/client/runtime/library").Decimal;
@@ -39,19 +39,19 @@ export declare class OrdersController {
         customerId: string | null;
     })[]>;
     updateStatus(id: string, status: string, deliveryStaffId?: string): Promise<import("../prisma/mock-db.service").MockOrder | {
+        deliveryStaffId: string | null;
         id: string;
         createdAt: Date;
         updatedAt: Date;
-        status: import("@prisma/client").$Enums.OrderStatus;
-        branchId: string;
-        deliveryStaffId: string | null;
         type: import("@prisma/client").$Enums.OrderType;
+        branchId: string;
         deliveryAddress: string | null;
         cookingNotes: string | null;
         deliveryNotes: string | null;
         paymentMethod: string;
         tableId: string | null;
         orderNumber: string;
+        status: import("@prisma/client").$Enums.OrderStatus;
         subtotal: import("@prisma/client/runtime/library").Decimal;
         tax: import("@prisma/client/runtime/library").Decimal;
         deliveryFee: import("@prisma/client/runtime/library").Decimal;
@@ -64,19 +64,19 @@ export declare class OrdersController {
         customerId: string | null;
     }>;
     verifyOtp(id: string, otp: string): Promise<import("../prisma/mock-db.service").MockOrder | {
+        deliveryStaffId: string | null;
         id: string;
         createdAt: Date;
         updatedAt: Date;
-        status: import("@prisma/client").$Enums.OrderStatus;
-        branchId: string;
-        deliveryStaffId: string | null;
         type: import("@prisma/client").$Enums.OrderType;
+        branchId: string;
         deliveryAddress: string | null;
         cookingNotes: string | null;
         deliveryNotes: string | null;
         paymentMethod: string;
         tableId: string | null;
         orderNumber: string;
+        status: import("@prisma/client").$Enums.OrderStatus;
         subtotal: import("@prisma/client/runtime/library").Decimal;
         tax: import("@prisma/client/runtime/library").Decimal;
         deliveryFee: import("@prisma/client/runtime/library").Decimal;

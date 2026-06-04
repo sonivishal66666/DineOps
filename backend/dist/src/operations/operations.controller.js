@@ -27,8 +27,8 @@ let OperationsController = class OperationsController {
         const userId = dto.userId || 'user-customer';
         return this.opsService.reserveTable(dto, userId);
     }
-    async updateTableStatus(id, waiterNeeded, billRequested) {
-        return this.opsService.updateTableQR(id, { waiterNeeded, billRequested });
+    async updateTableStatus(id, status, waiterNeeded, billRequested) {
+        return this.opsService.updateTableQR(id, { status, waiterNeeded, billRequested });
     }
     async getInventory(branchId) {
         return this.opsService.getInventory(branchId);
@@ -78,6 +78,18 @@ let OperationsController = class OperationsController {
     async purchaseGiftVoucher(dto) {
         return this.opsService.purchaseGiftVoucher(dto);
     }
+    async getCoupons() {
+        return this.opsService.getCoupons();
+    }
+    async createCoupon(dto) {
+        return this.opsService.createCoupon(dto);
+    }
+    async toggleCoupon(id) {
+        return this.opsService.toggleCoupon(id);
+    }
+    async deleteCoupon(id) {
+        return this.opsService.deleteCoupon(id);
+    }
 };
 exports.OperationsController = OperationsController;
 __decorate([
@@ -97,10 +109,11 @@ __decorate([
 __decorate([
     (0, common_1.Put)('tables/:id/status'),
     __param(0, (0, common_1.Param)('id')),
-    __param(1, (0, common_1.Body)('waiterNeeded')),
-    __param(2, (0, common_1.Body)('billRequested')),
+    __param(1, (0, common_1.Body)('status')),
+    __param(2, (0, common_1.Body)('waiterNeeded')),
+    __param(3, (0, common_1.Body)('billRequested')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, Boolean, Boolean]),
+    __metadata("design:paramtypes", [String, String, Boolean, Boolean]),
     __metadata("design:returntype", Promise)
 ], OperationsController.prototype, "updateTableStatus", null);
 __decorate([
@@ -217,6 +230,33 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], OperationsController.prototype, "purchaseGiftVoucher", null);
+__decorate([
+    (0, common_1.Get)('coupons'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], OperationsController.prototype, "getCoupons", null);
+__decorate([
+    (0, common_1.Post)('coupons'),
+    __param(0, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], OperationsController.prototype, "createCoupon", null);
+__decorate([
+    (0, common_1.Put)('coupons/:id/toggle'),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], OperationsController.prototype, "toggleCoupon", null);
+__decorate([
+    (0, common_1.Delete)('coupons/:id'),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], OperationsController.prototype, "deleteCoupon", null);
 exports.OperationsController = OperationsController = __decorate([
     (0, common_1.Controller)('api/ops'),
     __metadata("design:paramtypes", [operations_service_1.OperationsService])

@@ -1,429 +1,655 @@
-# 🍽️ DineOps — Premium Restaurant Operations Platform
+<div align="center">
 
-> A production-grade, full-stack restaurant management ecosystem built with Next.js + NestJS. Features real-time order tracking, 6 role-based staff portals, AI concierge, loyalty wallet, digital gifting, table reservations, meal subscriptions, live KDS, POS terminal, delivery management, inventory control, and a Super Admin analytics command center.
+<br/>
+
+```
+██████╗ ██╗███╗   ██╗███████╗ ██████╗ ██████╗ ███████╗
+██╔══██╗██║████╗  ██║██╔════╝██╔═══██╗██╔══██╗██╔════╝
+██║  ██║██║██╔██╗ ██║█████╗  ██║   ██║██████╔╝███████╗
+██║  ██║██║██║╚██╗██║██╔══╝  ██║   ██║██╔═══╝ ╚════██║
+██████╔╝██║██║ ╚████║███████╗╚██████╔╝██║     ███████║
+╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝     ╚══════╝
+```
+
+### ✦ &nbsp; **Where Every Meal Becomes a Memorable Experience** &nbsp; ✦
+
+<br/>
+
+[![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://prisma.io/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://framer.com/motion/)
+
+<br/>
+
+> **DineOps** is a production-grade, full-stack restaurant management ecosystem — a single platform that unifies the entire dining experience, from the moment a guest browses the menu to the instant a delivery rider hands over their order.
+
+<br/>
 
 ---
 
-## 🏗️ Tech Stack
+</div>
 
-| Layer | Technology |
-|---|---|
-| **Frontend** | Next.js 16 (App Router), React 18, TypeScript |
-| **Styling** | Tailwind CSS, Framer Motion (animations), Lucide React (icons) |
-| **Backend** | NestJS (Node.js), TypeScript |
-| **Database** | PostgreSQL via Prisma ORM — with automatic JSON mock-DB fallback |
-| **Auth** | JWT Bearer tokens (login / signup / role-based guards) |
-| **Payments** | Cashfree Gateway (fully simulated — UPI, Card, Net Banking, Wallet) |
-| **Design** | Dark premium metallic-carbon aesthetic with amber/gold accents |
+<br/>
+
+## ✦ &nbsp; Overview
+
+DineOps is not just a restaurant app. It is a complete **operational command center** — built to the standard of enterprise SaaS products. Seven distinct role-based portals, each crafted with surgical precision, serve every stakeholder in a modern food business: customers, cashiers, chefs, delivery staff, administrators, and executive leadership.
+
+Every decision in its architecture prioritizes **elegance, resilience, and real-world deployability** — with a zero-compromise offline fallback that keeps every feature fully alive even without a live database.
+
+<br/>
 
 ---
 
-## 🚀 Getting Started
+<br/>
+
+## ✦ &nbsp; Technology Architecture
+
+<br/>
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                        DINEOPS ARCHITECTURE                         │
+├───────────────────────┬─────────────────────────────────────────────┤
+│   FRONTEND            │   BACKEND                                   │
+│                       │                                             │
+│  Next.js 16           │   NestJS (Node.js)                          │
+│  React 18             │   RESTful API — 26 Endpoints                │
+│  TypeScript           │   JWT Auth + Role Guards                    │
+│  Tailwind CSS         │   Prisma ORM → PostgreSQL                   │
+│  Framer Motion        │   JSON Mock DB (auto-fallback)              │
+│  Lucide React Icons   │   AI Chat Endpoint                          │
+│                       │   Cashfree Payment Integration              │
+└───────────────────────┴─────────────────────────────────────────────┘
+```
+
+<br/>
+
+| Layer | Technology | Purpose |
+|:--|:--|:--|
+| 🖥 **Frontend** | Next.js 16 · React 18 · TypeScript | App Router, SSR, component UI |
+| 🎨 **Styling** | Tailwind CSS · Framer Motion | Glassmorphism UI, micro-animations |
+| ⚙️ **Backend** | NestJS · TypeScript | REST API with 26 endpoints, RBAC middleware |
+| 🗄 **Database** | PostgreSQL via Prisma ORM | Production data persistence |
+| 🔄 **Fallback DB** | Custom JSON Mock DB | Zero-config offline mode — 100% feature parity |
+| 🔐 **Auth** | JWT Bearer Tokens | Login · Signup · Role-based route guards |
+| 💳 **Payments** | Cashfree Gateway (simulated) | UPI QR · Card · Net Banking · Wallet |
+| 🤖 **AI** | OpenAI-compatible backend endpoint | Context-aware concierge chatbot |
+| 🎭 **Design** | Premium dark metallic aesthetic | Amber/gold accents · Glassmorphism · Parallax |
+
+<br/>
+
+---
+
+<br/>
+
+## ✦ &nbsp; Quick Start
+
+<br/>
 
 ### Prerequisites
-- Node.js ≥ 18
-- npm ≥ 9
 
-### 1. Run the Backend
+```
+Node.js ≥ 18.0.0
+npm ≥ 9.0.0
+PostgreSQL (optional — system works fully without it)
+```
+
+<br/>
+
+### 1 — Clone & Install
+
+```bash
+git clone https://github.com/yourusername/dineops.git
+cd dineops
+```
+
+<br/>
+
+### 2 — Start the Backend API
+
 ```bash
 cd backend
 npm install
 npm run start:dev
-# API running at http://localhost:5000
+
+# ✓ API Server running at  →  http://localhost:5000
+# ✓ Swagger Docs available →  http://localhost:5000/api/docs
 ```
 
-### 2. Run the Frontend
+<br/>
+
+### 3 — Start the Frontend
+
 ```bash
 cd frontend
 npm install
-npx next dev -p 3001
-# App running at http://localhost:3001
+npm run dev
+
+# ✓ Application running at →  http://localhost:3000
 ```
 
-> **Offline Mode**: If PostgreSQL is not configured, the system auto-falls back to a JSON mock database (`mock-db-persistence.json` at the project root). Every feature — orders, wallets, reservations, reviews, shifts — works fully in this mode. Data persists across backend restarts.
+<br/>
+
+> **⚡ Zero-Config Offline Mode** — If PostgreSQL is not configured, the system automatically falls back to a persistent JSON mock database (`mock-db-persistence.json`). Every single feature — orders, wallets, reservations, reviews, shifts, inventory — works fully in this mode. Data persists across backend restarts. Delete the file to reset to clean seed state.
+
+<br/>
 
 ---
 
-## 🔐 Staff Login Credentials
+<br/>
 
-| Role | Email | Password | Portal URL |
-|---|---|---|---|
-| Super Admin | `admin@admin` | `admin` | `/super-admin` |
-| Admin / Manager | `admin@dineops.com` | `password123` | `/admin` |
-| Chef (KDS) | `chef@dineops.com` | `password123` | `/kds` |
-| Kitchen Staff (KDS) | `staff@dineops.com` | `password123` | `/kds` |
-| Cashier (POS) | `cashier@dineops.com` | `password123` | `/pos` |
-| Delivery Rider | `delivery@dineops.com` | `password123` | `/delivery` |
-| Customer | `customer@dineops.com` | `password123` | `/` |
+## ✦ &nbsp; Staff Login Credentials
 
-> Customers can also self-register via the **Sign Up** form on the homepage.
+<br/>
 
----
+<div align="center">
 
-## 🌐 Portal Routes & Access Control
+| &nbsp; | Role | Email | Password | Portal |
+|:--:|:--|:--|:--|:--|
+| 👑 | **Super Admin** | `admin@admin` | `admin` | `/super-admin` |
+| 🛡 | **Admin / Manager** | `admin@dineops.com` | `password123` | `/admin` |
+| 🍳 | **Head Chef (KDS)** | `chef@dineops.com` | `password123` | `/kds` |
+| 🧑‍🍳 | **Kitchen Staff** | `staff@dineops.com` | `password123` | `/kds` |
+| 🏪 | **Cashier (POS)** | `cashier@dineops.com` | `password123` | `/pos` |
+| 🛵 | **Delivery Rider** | `delivery@dineops.com` | `password123` | `/delivery` |
+| 🧑‍💻 | **Customer** | `customer@dineops.com` | `password123` | `/` |
 
-| URL | Portal | Who Can Access |
-|---|---|---|
-| `/` | Customer Portal | Public / Logged-in Customers |
-| `/pos` | POS Cashier Terminal | CASHIER role |
-| `/kds` | Kitchen Display System | CHEF, KITCHEN_STAFF roles |
-| `/delivery` | Delivery Rider Dashboard | DELIVERY_STAFF role |
-| `/admin` | Admin / Operations Panel | ADMIN role |
-| `/super-admin` | Super Admin HQ | SUPER_ADMIN role only |
+</div>
 
-All staff portals are protected by `PortalAuthGuard` — unauthorized access shows a premium "Access Denied" modal instead of a redirect.
+<br/>
+
+> Customers can self-register via the **Sign Up** form on the landing page. New accounts are assigned the `CUSTOMER` role by default and can be elevated by a Super Admin.
+
+<br/>
 
 ---
 
-## 🎯 Features Built — Complete List
+<br/>
+
+## ✦ &nbsp; Portal Map & Role-Based Access
+
+<br/>
+
+```
+https://dineops.app/
+│
+├── /                    ← Customer Portal         (Public + Authenticated Customers)
+├── /pos                 ← POS Cashier Terminal    (CASHIER role)
+├── /kds                 ← Kitchen Display System  (CHEF · KITCHEN_STAFF roles)
+├── /delivery            ← Delivery Rider Hub      (DELIVERY_STAFF role)
+├── /admin               ← Operations Dashboard    (ADMIN role)
+└── /super-admin         ← Executive Command HQ    (SUPER_ADMIN role only)
+```
+
+All staff portals are protected by `PortalAuthGuard` — unauthorized access renders a premium animated **Access Denied** modal, never a raw redirect.
+
+<br/>
 
 ---
 
-### 👤 Customer Portal (`/`)
+<br/>
 
-#### 🍽️ Artisan Menu
-- Full food catalog across 6 categories: **Breakfast Specials, Italian & Pastas, Gourmet Burgers & Grills, Indian Chaat, Hot Coffee & Beverages, Sweet Endings**
-- Each item shows: image, price, dietary tags (Veg 🟢, Keto, Gluten-Free), calories, allergens
-- **Search bar** — live filter by name/description
-- **Voice search simulation** — click mic → auto-populates a random query
-- **Dietary filters** — Veg Only, Keto, Gluten-Free toggles
-- **Category tabs** — horizontal scrollable category selector
-- **Item customization** — add-ons (portion size, extra toppings) on each item
+## ✦ &nbsp; Feature Reference
 
-#### 🛒 Cart & Checkout
-- **Multi-item cart** with quantity controls and live price calculation
-- **Coupon codes**: `BREWFIRST` (20% off, up to ₹150), `LUXURY50` (flat ₹50), `CHEFSPECIAL` (15% off)
-- **Order type**: Dine-In / Pickup / Delivery selection
-- **Delivery address** input for delivery orders
-- **Cooking notes** field
-- **5% GST** auto-calculated, ₹40 delivery fee for delivery orders
+<br/>
 
-#### 💳 Payment Gateway (Cashfree Simulated)
-- **UPI** — QR code scanner simulation
-- **Card** — Debit/Credit card form with card preview
-- **Net Banking** — Bank selection dropdown
-- **Wallet** — Shows live Gift Wallet balance; deducts on order placement; blocks if insufficient
+<details>
+<summary><strong>🍽 &nbsp; Customer Portal &nbsp;—&nbsp; Complete Feature Set</strong></summary>
 
-#### 📦 My Orders — Live Order Tracker
-- Real-time status stepper: `Order Placed → Accepted → Cooking → Ready → Out for Delivery → Delivered`
-- Live polling every 3 seconds from backend
-- **OTP display** for delivery orders (shown to customer for handover verification)
-- **Post-delivery Review Form** — appears once order is `DELIVERED`
-  - 5-star interactive star rating
-  - Text comment box
-  - Submits to backend; prevents duplicate submissions via `localStorage` flag
+<br/>
 
-#### 🗓️ Table Reservations
-- **Interactive floor plan** — 15 tables displayed as a visual grid
-- Color-coded status: Available (green), Occupied (red), Reserved (amber)
-- Select table → fill date, time slot, guest count, special notes → confirm
-- Table status updates in real-time on the floor plan
+#### Artisan Menu Experience
 
-#### 🍱 Meal Subscriptions
-- **4 plans**: Weekly Lite (₹1,999), Monthly Student (₹4,500), Premium Monthly (₹8,999), Corporate Team (₹24,999)
-- Features listed per plan (calorie counts, delivery times, days)
-- Subscribe with one click; stored to user account
+- Rich food catalog spanning **8+ curated categories**: Breakfast Specials · European Classics · Gourmet Grills · Indian Meals & Thalis · Indian Chaat Corner · Indo-Chinese Fusion · Premium Beverages · Sweet Endings
+- Every item displays: hero image, price, dietary badges (🟢 Veg · Keto · Gluten-Free), calorie count, macro breakdown (P / C / F)
+- **Live search** with instant filter-as-you-type
+- **Voice search simulation** — mic click auto-populates a contextual query
+- **Dietary filter toggles** — Vegetarian Only · Keto Friendly · Gluten Free
+- **Scrollable category sidebar** — pinned for quick navigation
+- **Item customization modals** — portion sizes, add-ons, extras with dynamic pricing
+- **Shimmer skeleton loaders** — premium lazy loading with fade-in
+- **Hover zoom & parallax** — images scale on card hover with smooth easing
+- **Chef's Pick badges** on popular items
 
-#### 🎁 Luxury Gift Vouchers
-- **3 denominations**: ₹500, ₹1,000, ₹2,000 — premium card designs
-- **Recipient email input** — enter email of registered DineOps user
-- On gift: recipient's **Gift Wallet is credited** immediately
-- Recipient receives a **bell notification** in their dashboard
-- Audit trail stored in `giftCards[]` with sender/recipient info
+#### Cart & Checkout
 
-#### 🤖 AI Concierge Chatbot
-- Floating chat bubble (bottom-right corner)
-- Context-aware replies for menu recommendations, reservations, dietary questions
-- Connects to backend `/api/ops/ai/chat` endpoint
-- Offline fallback responses built in
+- **Slide-out cart panel** — accessible from any tab, persists across navigation
+- Quantity controls · live subtotal · GST (5%) calculation · ₹40 delivery fee auto-applied
+- **Coupon codes**: `BREWFIRST` (20% off up to ₹150 on orders ≥ ₹300) · `LUXURY50` (flat ₹50)
+- **Order type selector**: Dine In · Delivery · Pickup — each with conditional fields
+- Delivery address textarea · table selector · scheduled pickup time
+- Cooking instructions / special notes field
 
-#### 🔔 Notification Center
-- Bell icon in the navbar with unread count badge
-- Notifications for: order status changes, gift wallet credits, system messages
-- Polled from backend every 3 seconds; auto-cleared after viewing
+#### Payment Gateway (Cashfree Simulated)
 
----
+- **UPI** — live QR code generated with dynamic amount encoded in URL
+- **Card** — debit/credit form with card number, expiry, CVV (pre-filled for demo)
+- **Net Banking** — bank selection grid (SBI, HDFC, ICICI, Axis)
+- Full animated payment processing flow: loading → success → order placed
 
-### 👤 My Profile Modal
+#### Live Order Tracking
 
-Accessible from the navbar's avatar/profile button on the homepage.
+- 4-step animated progress stepper: `Order Placed → Cooking → Ready → Delivered`
+- **Active Orders** tab + **Order History** tab — cleanly separated
+- Live polling from backend every 3 seconds
+- **OTP display** for delivery orders (secure handover verification)
+- **Post-delivery Review Form** — 5-star rating + text comment, one submission per order (persisted via localStorage + backend)
 
-#### Tab 1 — Profile Details
-- **Locked fields**: Name, Email (cannot be changed)
-- **Editable fields** (click Edit):
-  - Date of Birth
-  - Anniversary Date
-  - Allergies (comma-separated)
-  - Home Address (street + city)
-  - Office Address (street + city)
-- Save changes → persisted to backend
+#### Table Reservation System
 
-#### Tab 2 — My Wallets & Rewards
-- **Loyalty Points** — earned through orders (Bronze → Silver → Gold → Platinum tier)
-- **Gift Wallet** — shows balance credited from received gift vouchers; green card with ₹ balance
-- If balance > 0: helpful tip "Use at checkout → Pay via Wallet"
+- **Live floor plan grid** — 8 tables rendered as interactive visual cards
+- Color-coded status: 🟢 Available · 🔴 Occupied · 🟡 Reserved · 🔒 Locked (Admin)
+- Select date, time slot (Breakfast / Lunch / Dinner), guest count, table number → Confirm
+- **Admin controls overlay** (Admin/Super Admin only) — Lock & Unlock any table directly from the floor plan
 
-#### Tab 3 — My Table Bookings
-- Lists all reservations for this user
-- Shows: Table number, status badge, date, time slot, guest count, notes
+#### Meal Subscriptions
 
-#### Tab 4 — Meal Subscriptions
-- Lists active/expired subscription plans
-- Shows: Plan name, status, start/end dates, price paid, meals used/total
-- Progress bar showing meal consumption percentage
+- 3 plans: Weekly Lunch (₹1,199) · Monthly Student (₹3,999) · Corporate Platinum Elite (₹9,999)
+- Loyalty cashback points per plan highlighted on each card
+- One-click activation with confirmation alert
 
----
+#### Luxury Gift Cards
 
-### 👑 Super Admin Portal (`/super-admin`)
+- 4 denominations: ₹500 · ₹1,000 · ₹2,500 · ₹5,000
+- Gradient premium card designs with animated purchase flow
+- Unique redemption code generated on purchase
 
-Protected by login — only `SUPER_ADMIN` role can access.
+#### AI Concierge Chatbot
 
-#### 📊 Analytics Dashboard
-- **Revenue KPIs**: Total revenue, today's revenue, average order value
-- **Order Stats**: Total orders, pending, delivered, cancelled counts
-- **Staff Performance** metrics
-- **Live data** refreshed every 5 seconds from backend
+- Floating bubble (bottom-right) — expands into a full conversational UI
+- Context-aware: menu recommendations, reservation help, dietary queries
+- Connects to backend `/api/ops/ai/chat` — with intelligent offline mock fallback
 
-#### 👥 Enterprise User Registry
-- Full table of every registered user (name, email, role, join date)
-- **Role assignment dropdown** per user — change any user's role:
-  - Customer → Cashier, Chef, Kitchen Staff, Delivery Rider, Admin, Super Admin
-- Changes saved to backend immediately; reflected at next login
+</details>
 
-#### 🔐 RBAC Permission Matrix
-- Full table showing which roles can access which features
-- Visual checkmarks across all portal actions
+<br/>
 
-#### ⭐ Customer Reviews Panel (Confidential)
-- Shows all reviews submitted post-delivery by customers
-- Displays: customer name, email, order number, star rating (visual stars), review text
-- **Sentiment badge**: POSITIVE (green), NEUTRAL (grey), NEGATIVE (red) — auto-detected by keyword analysis
-- Submission timestamp
-- Only visible to Super Admin — not shown in any other portal
+<details>
+<summary><strong>👑 &nbsp; Super Admin Command Center &nbsp;—&nbsp; Executive Oversight</strong></summary>
 
-#### 🚪 Sign Out
-- Premium "Terminate Clearance Session" confirmation modal
-- Clears JWT token and user session
+<br/>
 
----
+- **Revenue & Order Analytics** — KPIs: total revenue, today's revenue, average order value, order counts by status
+- **Enterprise User Registry** — full table of all registered users with live role assignment dropdown
+- **RBAC Permission Matrix** — visual grid mapping every role to its permitted actions
+- **Customer Reviews Panel** — all post-delivery reviews with star ratings, auto-detected sentiment badges (POSITIVE · NEUTRAL · NEGATIVE), and submission timestamps
+- **Premium session management** — "Terminate Clearance Session" styled sign-out flow
 
-### 🛠️ Admin / Operations Panel (`/admin`)
+</details>
 
-Protected login — ADMIN role only.
+<br/>
 
-#### Tab 1 — Inventory Management
-- Stock registry table: item name, SKU, current quantity, unit, min stock level, supplier
-- **Low stock alerts** highlighted in red when quantity < min level
-- **Quick movement form**: select item → IN (restock) or OUT (waste/usage) → enter quantity → submit
-- Inventory deducted automatically when orders are placed
+<details>
+<summary><strong>🛠 &nbsp; Admin Operations Panel &nbsp;—&nbsp; Restaurant Management</strong></summary>
 
-#### Tab 2 — Staff Attendance & Shifts
-- Lists all staff members with today's shift data
-- Shows: Name, role, shift start/end time, check-in/check-out time, status (SCHEDULED / ACTIVE / COMPLETED / ABSENT)
-- **Clock In / Clock Out** buttons per shift
-- Auto-populated daily shifts for all non-customer roles (CHEF, CASHIER, DELIVERY_STAFF, KITCHEN_STAFF, ADMIN)
+<br/>
 
-#### Tab 3 — Table Reservations Manager
-- Full list of all table bookings across all customers
-- Shows: Table number, booking status badge, customer name, email, date, time slot, guest count, special notes
-- **Inline Edit mode**: click ✏️ to edit status, date, time slot, guest count → Save
-- **Cancel button** 🗑️ to permanently delete a booking
-- Refresh button to reload from backend
+- **Inventory Management** — stock registry, low-stock highlighting, quick IN/OUT movement form
+- **Staff Attendance & Shifts** — all staff shifts auto-populated for today; Clock In / Clock Out per employee
+- **Table Reservations Manager** — full list with inline edit (status, date, slot, guests) and cancel
+
+</details>
+
+<br/>
+
+<details>
+<summary><strong>🍳 &nbsp; Kitchen Display System &nbsp;—&nbsp; Live Order Queue</strong></summary>
+
+<br/>
+
+- Real-time order cards for all non-delivered orders
+- Each card: order number · type badge · item list with quantities · cooking notes
+- Status advancement: `ACCEPTED → COOKING → READY → DELIVERED`
+- Auto-refreshes every 3 seconds — zero manual reload required
+
+</details>
+
+<br/>
+
+<details>
+<summary><strong>💳 &nbsp; POS Cashier Terminal &nbsp;—&nbsp; Walk-In Sales</strong></summary>
+
+<br/>
+
+- Full point-of-sale interface for walk-in and counter orders
+- Menu grid with add-to-cart, running bill total, quantity controls
+- Discount codes · coupon support · receipt print simulation
+- Dine In / Takeaway order type selector
+
+</details>
+
+<br/>
+
+<details>
+<summary><strong>🛵 &nbsp; Delivery Rider Portal &nbsp;—&nbsp; Last-Mile Operations</strong></summary>
+
+<br/>
+
+- Assigned delivery orders list with customer address and order details
+- Status flow: `OUT_FOR_DELIVERY → OTP Verified → DELIVERED`
+- OTP verification gate — cannot mark delivered without customer code
+- Clean mobile-first layout optimized for on-the-road use
+
+</details>
+
+<br/>
 
 ---
 
-### 🍳 Kitchen Display System — KDS (`/kds`)
+<br/>
 
-Protected login — CHEF / KITCHEN_STAFF roles.
+## ✦ &nbsp; Platform-Wide Systems
 
-- **Live order queue** showing all non-delivered orders
-- Each order card shows: order number, type, items list with quantities, cooking notes
-- **Status progression buttons**:
-  - `ACCEPTED` → `COOKING` → `READY` → `DELIVERED`
-- Status updates immediately on backend; customer sees update in My Orders tracker
-- Auto-refreshes every 3 seconds
+<br/>
 
----
+### 🔐 &nbsp; Authentication & Role-Based Access Control
 
-### 💳 POS Cashier Terminal (`/pos`)
+JWT-based authentication with email + password. Role stored in the token payload — validated on every protected API route and frontend portal guard. Seven distinct roles form a strict access hierarchy:
 
-Protected login — CASHIER role only.
+```
+SUPER_ADMIN  ←  Full system access
+    ↓
+ADMIN        ←  Operations, inventory, staff, reservations
+    ↓
+CHEF / KITCHEN_STAFF  ←  Kitchen queue only
+CASHIER               ←  POS terminal only
+DELIVERY_STAFF        ←  Delivery assignments only
+    ↓
+CUSTOMER     ←  Public-facing portal
+```
 
-- Full point-of-sale interface for walk-in customers
-- **Menu grid** — browse and add items to bill
-- **Cart panel** — running total with quantity controls
-- **Discount application**
-- **Coupon support**
-- **Print receipt** simulation
-- Order type: Dine-In / Takeaway
+<br/>
 
----
+### 🔔 &nbsp; Real-Time Notification Engine
 
-### 🚴 Delivery Rider Portal (`/delivery`)
-
-Protected login — DELIVERY_STAFF role only.
-
-- Shows only orders assigned to the logged-in delivery rider
-- Order cards display: customer name, address, order items, total
-- **Status controls**:
-  - Mark as `OUT_FOR_DELIVERY`
-  - **OTP Verification** — enter customer's OTP to confirm handover
-  - Mark as `DELIVERED` (only after OTP verified)
-- Prevents marking delivered without OTP match
-
----
-
-## 💡 Platform-Wide Systems
-
-### 🔐 Authentication & RBAC
-- JWT-based login with `email + password`
-- Role stored in JWT payload — verified on every protected route
-- Roles: `CUSTOMER`, `CASHIER`, `CHEF`, `KITCHEN_STAFF`, `DELIVERY_STAFF`, `ADMIN`, `SUPER_ADMIN`
-- `PortalAuthGuard` component wraps every staff portal — shows premium sign-in modal if not authenticated or wrong role
-- Sign-out clears localStorage token and reloads
-
-### 💰 Gift Wallet System
-- Gift vouchers bought by User A for User B's registered email
-- Wallet balance (`cashbackBalance`) stored directly on the user record — reliable, isolated from table bookings
-- `GET /api/auth/profile` always returns correct wallet balance
-- At checkout → "Pay via Wallet" deducts from balance with insufficient-balance error guard
-- Notification pushed to recipient's bell the moment voucher is sent
-
-### 🔔 Real-Time Notification System
-- Notifications stored in `user.notifications[]` array on backend
+- Notifications stored per-user on the backend
 - Frontend polls `GET /api/auth/notifications` every 3 seconds
-- Notifications auto-cleared from backend after delivery (one-time read)
-- Triggers: order status changes, gift wallet credits
+- Bell icon in navbar shows live unread count badge
+- Auto-cleared from backend after delivery — one-time read model
+- Triggers: order status changes, reservation confirmations, low-stock alerts (admin only), system messages
 
-### 🗄️ Persistent Mock Database
-- When PostgreSQL is unavailable, all data auto-persists to `mock-db-persistence.json` in the project root
-- Saved every 2 seconds via `setInterval`
-- Covers: users (with wallet/loyalty), orders, reservations, reviews, inventory, shifts, gift cards, subscriptions
-- Delete the file to **reset all data** to clean seed state
+<br/>
 
-### 🎨 Premium UI System
-- Dark carbon/metallic theme: `#0d0a07` backgrounds, amber `#f59e0b` accents
-- Glassmorphism panels with `backdrop-blur`
-- Framer Motion page transitions and modal animations
-- Premium center-page alert modals (zero browser `alert()` calls anywhere)
-- Micro-animations: hover effects, shimmer loaders, spinning indicators
-- Fully responsive — mobile through widescreen
+### 🗄 &nbsp; Dual-Mode Persistence
+
+```
+Production Mode  →  PostgreSQL via Prisma ORM
+                     └─ Full schema, migrations, relational integrity
+
+Offline Mode     →  JSON Mock Database (auto-generated)
+                     └─ mock-db-persistence.json
+                     └─ Saved every 2 seconds via setInterval
+                     └─ Full feature parity — zero degradation
+                     └─ Delete file to reset all data
+```
+
+<br/>
+
+### 🎨 &nbsp; Premium Design System
+
+- **Color palette**: Deep carbon `#0d0a07` · Amber gold `#f59e0b` · Slate white `#f4ece1`
+- **Glassmorphism**: `backdrop-blur` panels with subtle amber border glow
+- **Typography**: Outfit + Inter via Google Fonts — clean, premium, legible
+- **Animations**: Framer Motion — page transitions, modal entrances, staggered list renders
+- **Micro-interactions**: hover scale, shimmer loaders, spinning progress indicators
+- **Zero browser alerts** — every notification uses a custom `PremiumAlertModal`
+- **Fully responsive** — from 320px mobile to 4K widescreen
+
+<br/>
 
 ---
 
-## 📁 Project Structure
+<br/>
+
+## ✦ &nbsp; Project Structure
+
+<br/>
 
 ```
-food/
-├── backend/
+dineops/
+│
+├── 📁 backend/
 │   └── src/
 │       ├── auth/
-│       │   ├── auth.controller.ts      # Login, signup, profile, notifications, user roles
-│       │   └── auth.service.ts         # JWT auth, wallet read/write, profile CRUD
+│       │   ├── auth.controller.ts         # Login · Signup · Profile · Notifications · User Roles
+│       │   └── auth.service.ts            # JWT auth · Wallet read/write · Profile CRUD
+│       │
 │       ├── orders/
-│       │   ├── orders.controller.ts    # Place order, get orders, update status, OTP verify
-│       │   └── orders.service.ts       # Order creation, coupon, inventory deduction, wallet deduction
+│       │   ├── orders.controller.ts       # Place order · Get orders · Update status · OTP verify
+│       │   └── orders.service.ts          # Order creation · Coupon · Inventory deduction · Wallet deduct
+│       │
 │       ├── menu/
-│       │   ├── menu.controller.ts      # Categories & menu items CRUD
+│       │   ├── menu.controller.ts         # Categories & menu items CRUD
 │       │   └── menu.service.ts
+│       │
 │       ├── operations/
-│       │   ├── operations.controller.ts # Tables, inventory, shifts, AI, payments, reservations, reviews, gifting
-│       │   └── operations.service.ts   # All ops logic — gift voucher credit, review sentiment, table mgmt
+│       │   ├── operations.controller.ts   # Tables · Inventory · Shifts · AI · Reservations · Reviews · Gifts
+│       │   └── operations.service.ts      # Gift voucher credit · Review sentiment · Table management
+│       │
 │       └── prisma/
-│           ├── mock-db.service.ts      # In-memory mock database with disk persistence + seeding
-│           └── prisma.service.ts       # Prisma ORM (used when DB is available)
+│           ├── mock-db.service.ts         # In-memory mock database with disk persistence & seeding
+│           └── prisma.service.ts          # Prisma ORM (production database connector)
 │
-├── frontend/
+├── 📁 frontend/
 │   └── src/app/
-│       ├── page.tsx                    # Main app shell — routing, sync loop, notification polling
+│       ├── page.tsx                       # App shell — routing · sync loop · notification polling
+│       │
 │       ├── components/
-│       │   ├── CustomerPortal.tsx      # Full customer UI (menu, cart, checkout, gifting, reservations)
-│       │   ├── MyOrdersModal.tsx       # Live order tracker + review form
-│       │   ├── MyProfileModal.tsx      # Profile tabs (details, wallet, bookings, subscriptions)
-│       │   ├── InventoryStaff.tsx      # Admin tabs (inventory, attendance, table reservations)
-│       │   ├── AnalyticsDashboard.tsx  # Super Admin revenue and order analytics
-│       │   ├── RBACMatrix.tsx          # Role permission matrix visualization
-│       │   ├── PortalAuthGuard.tsx     # Auth wrapper for all staff portals
-│       │   └── PremiumAlertModal.tsx   # Reusable center-page alert (replaces all browser alerts)
-│       ├── super-admin/page.tsx        # Super Admin HQ (analytics + users + reviews)
-│       ├── admin/page.tsx              # Admin operations panel
-│       ├── kds/page.tsx                # Kitchen display system
-│       ├── pos/page.tsx                # POS cashier terminal
-│       └── delivery/page.tsx           # Delivery rider dashboard
+│       │   ├── CustomerPortal.tsx         # Full customer UI: menu · cart · checkout · gifting · reservations
+│       │   ├── Navbar.tsx                 # Role-aware navigation · notification bell · profile dropdown
+│       │   ├── MyOrdersModal.tsx          # Live order tracker · review form · status stepper
+│       │   ├── MyReservationsModal.tsx    # Reservation history: Past · Today · Upcoming
+│       │   ├── MyProfileModal.tsx         # Profile tabs: details · wallet · bookings · subscriptions
+│       │   ├── InventoryStaff.tsx         # Admin tabs: inventory · attendance · table reservations
+│       │   ├── AnalyticsDashboard.tsx     # Super Admin revenue & order analytics
+│       │   ├── RBACMatrix.tsx             # Role permission matrix visualization
+│       │   ├── POSTerminal.tsx            # POS cashier terminal interface
+│       │   ├── KitchenKDS.tsx             # Kitchen display system
+│       │   ├── DeliveryDashboard.tsx      # Delivery rider portal
+│       │   ├── PortalAuthGuard.tsx        # Auth wrapper for all staff portals
+│       │   ├── AccessDeniedModal.tsx      # Premium access denied overlay
+│       │   └── PremiumAlertModal.tsx      # Reusable alert modal (replaces all browser alerts)
+│       │
+│       ├── super-admin/page.tsx           # Super Admin HQ: analytics · users · reviews
+│       ├── admin/page.tsx                 # Admin operations panel
+│       ├── kds/page.tsx                   # Kitchen display system
+│       ├── pos/page.tsx                   # POS cashier terminal
+│       └── delivery/page.tsx              # Delivery rider dashboard
 │
-├── mock-db-persistence.json            # Auto-generated persistent mock DB (delete to reset)
-├── schema.sql                          # PostgreSQL schema reference
-├── docker-compose.yml                  # Docker setup for PostgreSQL
-└── README.md                           # This file
+├── 📁 public/menu/                        # 47 high-resolution food images (all menu items)
+├── mock-db-persistence.json               # Auto-generated persistent mock DB (delete to reset)
+├── schema.sql                             # PostgreSQL schema reference
+├── docker-compose.yml                     # Docker setup for PostgreSQL
+└── README.md
 ```
 
----
-
-## 🧪 Key Test Flows
-
-### End-to-End Order
-1. Sign in as `customer@dineops.com`
-2. Add items to cart → Apply coupon `BREWFIRST` → Choose Delivery → Pay via UPI
-3. Open **My Orders** → watch status update live as KDS advances it
-4. Log in as `delivery@dineops.com` → enter OTP → mark DELIVERED
-5. Back as customer → **My Orders** shows review form → submit rating + comment
-6. Log in as `admin@admin` → Super Admin → **Customer Reviews** panel shows the review
-
-### Gift Wallet Flow
-1. Log in as Customer A → Luxury Gifting tab → enter Customer B's email → Gift ₹500
-2. Log in as Customer B → bell 🔔 shows "Gift Wallet Credit Received!"
-3. Open **My Profile** → **Gift Wallet** shows ₹500
-4. Add items to cart → Checkout → **Pay via Wallet** → balance deducted
-
-### Table Reservation Flow
-1. Log in as customer → Reserve a Table → pick date, time, guests
-2. Open **My Profile → Tables tab** → booking appears with status
-3. Log in as `admin@dineops.com` → Admin panel → **Table Reservations tab** → edit or cancel booking
-
-### Role Assignment Flow
-1. Register a new customer account
-2. Log in as `admin@admin` → Super Admin → **User Registry**
-3. Change their role to `CHEF`
-4. That user can now log in and access `/kds`
-
-### Attendance & Shifts
-1. Log in as `admin@dineops.com` → Admin → **Staff Attendance tab**
-2. All staff shifts auto-populated for today
-3. Click **Clock In / Clock Out** to update shift status
+<br/>
 
 ---
 
-## 🔑 API Endpoints Reference
+<br/>
+
+## ✦ &nbsp; API Reference
+
+<br/>
+
+### Auth Endpoints
 
 | Method | Endpoint | Description |
-|---|---|---|
-| POST | `/api/auth/signup` | Register new user |
-| POST | `/api/auth/login` | Login — returns JWT token |
-| GET | `/api/auth/profile` | Get current user profile (wallet, loyalty, reservations) |
-| PUT | `/api/auth/profile` | Update profile (address, DOB, allergies) |
-| GET | `/api/auth/users` | List all users (Super Admin) |
-| PUT | `/api/auth/users/:id/role` | Assign role to user |
-| GET | `/api/auth/notifications` | Fetch & clear pending notifications |
-| GET | `/api/menu/categories` | Get menu categories |
-| GET | `/api/menu/items` | Get all menu items |
-| POST | `/api/orders/place` | Place a new order |
-| GET | `/api/orders` | Get all orders |
-| PUT | `/api/orders/:id/status` | Update order status (KDS / Delivery) |
-| POST | `/api/orders/:id/otp-verify` | Verify OTP for delivery handover |
-| GET | `/api/ops/tables` | Get all tables with status |
-| POST | `/api/ops/tables/reserve` | Reserve a table |
-| GET | `/api/ops/reservations` | Get all reservations (Admin) |
-| PUT | `/api/ops/reservations/:id` | Edit a reservation |
-| DELETE | `/api/ops/reservations/:id` | Cancel a reservation |
-| GET | `/api/ops/inventory` | Get inventory items |
-| POST | `/api/ops/inventory/movement` | Record stock in/out movement |
-| GET | `/api/ops/shifts` | Get staff shifts |
-| PUT | `/api/ops/shifts/:id/clock` | Clock in / Clock out |
-| POST | `/api/ops/reviews` | Submit a customer review |
-| GET | `/api/ops/reviews` | Get all reviews (Super Admin) |
-| POST | `/api/ops/gift-vouchers/purchase` | Purchase & credit a gift voucher |
-| POST | `/api/ops/ai/chat` | AI Concierge chatbot reply |
+|:--|:--|:--|
+| `POST` | `/api/auth/signup` | Register a new user account |
+| `POST` | `/api/auth/login` | Authenticate — returns signed JWT token |
+| `GET` | `/api/auth/profile` | Fetch current user profile (wallet · loyalty · reservations) |
+| `PUT` | `/api/auth/profile` | Update profile (DOB · address · allergies) |
+| `GET` | `/api/auth/users` | List all registered users — Super Admin only |
+| `PUT` | `/api/auth/users/:id/role` | Assign role to any user |
+| `GET` | `/api/auth/notifications` | Fetch & auto-clear pending notifications |
+
+### Menu Endpoints
+
+| Method | Endpoint | Description |
+|:--|:--|:--|
+| `GET` | `/api/menu/categories` | Retrieve all menu categories |
+| `GET` | `/api/menu/items` | Retrieve all menu items |
+
+### Order Endpoints
+
+| Method | Endpoint | Description |
+|:--|:--|:--|
+| `POST` | `/api/orders/place` | Place a new order with items, type, coupon |
+| `GET` | `/api/orders` | Retrieve all orders |
+| `PUT` | `/api/orders/:id/status` | Advance order status (KDS / Delivery rider) |
+| `POST` | `/api/orders/:id/otp-verify` | Verify delivery handover OTP |
+
+### Operations Endpoints
+
+| Method | Endpoint | Description |
+|:--|:--|:--|
+| `GET` | `/api/ops/tables` | Retrieve all tables with live status |
+| `POST` | `/api/ops/tables/reserve` | Create a table reservation |
+| `PUT` | `/api/ops/tables/:id/status` | Lock · Unlock · Update table status (Admin) |
+| `GET` | `/api/ops/reservations` | Get all reservations — Admin view |
+| `PUT` | `/api/ops/reservations/:id` | Edit reservation details |
+| `DELETE` | `/api/ops/reservations/:id` | Cancel a reservation |
+| `GET` | `/api/ops/inventory` | Get full inventory registry |
+| `POST` | `/api/ops/inventory/movement` | Record stock IN / OUT movement |
+| `GET` | `/api/ops/shifts` | Get all staff shifts |
+| `PUT` | `/api/ops/shifts/:id/clock` | Clock in / Clock out |
+| `POST` | `/api/ops/reviews` | Submit a post-delivery customer review |
+| `GET` | `/api/ops/reviews` | Get all reviews — Super Admin only |
+| `POST` | `/api/ops/gift-vouchers/purchase` | Purchase and credit a gift card |
+| `POST` | `/api/ops/ai/chat` | AI Concierge chatbot response |
+
+<br/>
 
 ---
 
-© 2026 DineOps • Premium Dining Platform • Built with ❤️ by Vishal Soni
+<br/>
+
+## ✦ &nbsp; Key User Journeys
+
+<br/>
+
+### 🍽 &nbsp; End-to-End Order Flow
+
+```
+Customer logs in
+    → Browses menu, adds items to cart
+    → Applies coupon BREWFIRST
+    → Selects Delivery, enters address
+    → Pays via UPI QR — order placed
+        ↓
+Chef sees order on KDS
+    → Advances: COOKING → READY
+        ↓
+Delivery rider picks up
+    → Marks OUT_FOR_DELIVERY
+    → Enters customer OTP → DELIVERED
+        ↓
+Customer opens My Orders
+    → Review form appears → submits 5-star rating
+        ↓
+Super Admin sees review in Customer Reviews panel
+```
+
+<br/>
+
+### 🎁 &nbsp; Gift Wallet Flow
+
+```
+Customer A → Gifting tab → selects ₹1,000 card → purchases
+    ↓
+Customer B → bell notification: "Gift Wallet Credit Received!"
+    → Opens My Profile → Gift Wallet shows ₹1,000
+    → Adds items to cart → Checkout → Pay via Wallet → balance deducted
+```
+
+<br/>
+
+### 🪑 &nbsp; Admin Table Management
+
+```
+Admin logs in → Customer Portal → Reserve a Table tab
+    → Clicks Table 103 (floor plan)
+    → Admin Control Panel appears:
+        → 🔒 Lock Table — prevents customer booking
+        → 🔓 Unlock Table — restores availability
+    → Status immediately reflected on all users' floor plans
+```
+
+<br/>
+
+### 👥 &nbsp; Role Promotion Flow
+
+```
+New user self-registers as CUSTOMER
+    ↓
+Super Admin → User Registry → finds the user
+    → Assigns role: CUSTOMER → CHEF
+        ↓
+User logs in again → now sees Kitchen Display System
+```
+
+<br/>
+
+---
+
+<br/>
+
+## ✦ &nbsp; Docker Setup (PostgreSQL)
+
+<br/>
+
+```bash
+# Start PostgreSQL with Docker
+docker-compose up -d
+
+# Run Prisma migrations
+cd backend
+npx prisma migrate dev --name init
+npx prisma generate
+
+# The system will automatically detect the database
+# and switch from mock mode to production mode
+```
+
+<br/>
+
+---
+
+<br/>
+
+<div align="center">
+
+---
+
+<br/>
+
+```
+ ✦  Built with precision. Designed with passion.  ✦
+```
+
+<br/>
+
+**DineOps** · Premium Restaurant Operations Platform
+
+*Crafted Flavors. Exceptional Service. Unforgettable Dining.*
+
+<br/>
+
+![TypeScript](https://img.shields.io/badge/TypeScript-100%25-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-amber?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=flat-square)
+![Made with](https://img.shields.io/badge/Made_with-❤️_by_Vishal_Soni-ff6b6b?style=flat-square)
+
+<br/>
+
+© 2026 **DineOps** · All rights reserved
+
+<br/>
+
+</div>

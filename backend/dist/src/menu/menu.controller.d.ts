@@ -22,22 +22,21 @@ export declare class MenuController {
                 id: string;
                 name: string;
                 price: import("@prisma/client/runtime/library").Decimal;
-                isDefault: boolean;
                 groupId: string;
+                isDefault: boolean;
             }[];
         } & {
             id: string;
             name: string;
+            menuItemId: string;
             minSelect: number;
             maxSelect: number;
-            menuItemId: string;
         })[];
     } & {
         id: string;
         name: string;
         createdAt: Date;
         updatedAt: Date;
-        active: boolean;
         description: string | null;
         image: string | null;
         categoryId: string;
@@ -53,13 +52,13 @@ export declare class MenuController {
         allergens: string[];
         isPopular: boolean;
         isTrending: boolean;
+        active: boolean;
     })[]>;
     createItem(dto: any): Promise<{
         id: string;
         name: string;
         createdAt: Date;
         updatedAt: Date;
-        active: boolean;
         description: string | null;
         image: string | null;
         categoryId: string;
@@ -75,6 +74,7 @@ export declare class MenuController {
         allergens: string[];
         isPopular: boolean;
         isTrending: boolean;
+        active: boolean;
     } | {
         id: string;
         categoryId: any;
@@ -96,12 +96,11 @@ export declare class MenuController {
         active: boolean;
         customizations: never[];
     }>;
-    updateItem(id: string, dto: any): Promise<{
+    updateItem(id: string, dto: any): Promise<import("../prisma/mock-db.service").MockMenuItem | {
         id: string;
         name: string;
         createdAt: Date;
         updatedAt: Date;
-        active: boolean;
         description: string | null;
         image: string | null;
         categoryId: string;
@@ -117,5 +116,6 @@ export declare class MenuController {
         allergens: string[];
         isPopular: boolean;
         isTrending: boolean;
-    } | import("../prisma/mock-db.service").MockMenuItem | null>;
+        active: boolean;
+    } | null>;
 }

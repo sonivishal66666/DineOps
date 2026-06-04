@@ -79,10 +79,13 @@ let OperationsService = class OperationsService {
             const idx = this.mockDb.tables.findIndex(t => t.id === tableId);
             if (idx === -1)
                 throw new common_1.NotFoundException('Table not found');
+            if (actions.status !== undefined)
+                this.mockDb.tables[idx].status = actions.status;
             if (actions.waiterNeeded !== undefined)
                 this.mockDb.tables[idx].waiterNeeded = actions.waiterNeeded;
             if (actions.billRequested !== undefined)
                 this.mockDb.tables[idx].billRequested = actions.billRequested;
+            this.mockDb.saveToDisk();
             return this.mockDb.tables[idx];
         }
     }
@@ -426,6 +429,43 @@ let OperationsService = class OperationsService {
             message: `Gift voucher of ₹${amount} successfully sent to ${recipient.name}. Their wallet has been credited.`,
             recipientName: recipient.name,
         };
+    }
+    async getCoupons() {
+        return this.mockDb.coupons;
+    }
+    async createCoupon(dto) {
+        const { code, discountType, value, minOrderValue, maxDiscount, expiresAt } = dto;
+        const newCoupon = {
+            id: `cp-${Date.now()}`,
+            code: code.toUpperCase(),
+            discountType: discountType || 'PERCENTAGE',
+            value: Number(value),
+            minOrderValue: Number(minOrderValue || 0),
+            maxDiscount: maxDiscount ? Number(maxDiscount) : null,
+            expiresAt: expiresAt ? new Date(expiresAt) : new Date('2027-12-31'),
+            active: true,
+        };
+        this.mockDb.coupons.push(newCoupon);
+        this.mockDb.saveToDisk();
+        return newCoupon;
+    }
+    async toggleCoupon(id) {
+        const idx = this.mockDb.coupons.findIndex(c => c.id === id);
+        if (idx === -1) {
+            throw new common_1.NotFoundException(`Coupon with ID ${id} not found.`);
+        }
+        this.mockDb.coupons[idx].active = !this.mockDb.coupons[idx].active;
+        this.mockDb.saveToDisk();
+        return this.mockDb.coupons[idx];
+    }
+    async deleteCoupon(id) {
+        const idx = this.mockDb.coupons.findIndex(c => c.id === id);
+        if (idx === -1) {
+            throw new common_1.NotFoundException(`Coupon with ID ${id} not found.`);
+        }
+        const deleted = this.mockDb.coupons.splice(idx, 1);
+        this.mockDb.saveToDisk();
+        return { success: true, deleted: deleted[0] };
     }
 };
 exports.OperationsService = OperationsService;

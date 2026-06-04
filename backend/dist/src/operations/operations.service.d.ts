@@ -4,16 +4,16 @@ export declare class OperationsService {
     private prisma;
     private mockDb;
     constructor(prisma: PrismaService, mockDb: MockDbService);
-    getTables(branchId?: string): Promise<import("../prisma/mock-db.service").MockTable[] | {
+    getTables(branchId?: string): Promise<{
         id: string;
+        branchId: string;
         tableNumber: string;
         capacity: number;
         status: import("@prisma/client").$Enums.TableStatus;
         waiterNeeded: boolean;
         billRequested: boolean;
         qrCode: string | null;
-        branchId: string;
-    }[]>;
+    }[] | import("../prisma/mock-db.service").MockTable[]>;
     reserveTable(dto: any, userId: string): Promise<{
         id: string;
         tableId: any;
@@ -25,48 +25,49 @@ export declare class OperationsService {
         notes: any;
     }>;
     updateTableQR(tableId: string, actions: {
+        status?: any;
         waiterNeeded?: boolean;
         billRequested?: boolean;
     }): Promise<{
         id: string;
+        branchId: string;
         tableNumber: string;
         capacity: number;
         status: import("@prisma/client").$Enums.TableStatus;
         waiterNeeded: boolean;
         billRequested: boolean;
         qrCode: string | null;
-        branchId: string;
     } | import("../prisma/mock-db.service").MockTable>;
-    getInventory(branchId?: string): Promise<import("../prisma/mock-db.service").MockInventory[] | ({
+    getInventory(branchId?: string): Promise<({
         movements: {
             id: string;
             createdAt: Date;
-            type: import("@prisma/client").$Enums.MovementType;
             quantity: import("@prisma/client/runtime/library").Decimal;
-            reason: string | null;
             inventoryItemId: string;
+            type: import("@prisma/client").$Enums.MovementType;
+            reason: string | null;
         }[];
     } & {
         id: string;
+        branchId: string;
         name: string;
         createdAt: Date;
-        updatedAt: Date;
-        branchId: string;
-        quantity: import("@prisma/client/runtime/library").Decimal;
         sku: string;
+        quantity: import("@prisma/client/runtime/library").Decimal;
         unit: string;
         minStockLevel: import("@prisma/client/runtime/library").Decimal;
         supplierName: string | null;
         supplierEmail: string | null;
         expiryDate: Date | null;
-    })[]>;
+        updatedAt: Date;
+    })[] | import("../prisma/mock-db.service").MockInventory[]>;
     addInventoryMovement(dto: any): Promise<{
         id: string;
         createdAt: Date;
-        type: import("@prisma/client").$Enums.MovementType;
         quantity: import("@prisma/client/runtime/library").Decimal;
-        reason: string | null;
         inventoryItemId: string;
+        type: import("@prisma/client").$Enums.MovementType;
+        reason: string | null;
     } | {
         success: boolean;
         updatedStock: number;
@@ -74,19 +75,19 @@ export declare class OperationsService {
     getShifts(branchId?: string): Promise<({
         user: {
             id: string;
-            email: string;
-            password: string;
             name: string;
-            phone: string | null;
-            role: import("@prisma/client").$Enums.Role;
             createdAt: Date;
             updatedAt: Date;
+            email: string;
+            password: string;
+            phone: string | null;
+            role: import("@prisma/client").$Enums.Role;
         };
     } & {
         id: string;
-        createdAt: Date;
-        status: import("@prisma/client").$Enums.ShiftStatus;
         branchId: string;
+        status: import("@prisma/client").$Enums.ShiftStatus;
+        createdAt: Date;
         userId: string;
         startTime: Date;
         endTime: Date;
@@ -107,9 +108,9 @@ export declare class OperationsService {
     }[]>;
     clockShift(shiftId: string, type: 'IN' | 'OUT'): Promise<import("../prisma/mock-db.service").MockShift | {
         id: string;
-        createdAt: Date;
-        status: import("@prisma/client").$Enums.ShiftStatus;
         branchId: string;
+        status: import("@prisma/client").$Enums.ShiftStatus;
+        createdAt: Date;
         userId: string;
         startTime: Date;
         endTime: Date;
@@ -184,14 +185,14 @@ export declare class OperationsService {
     updateReservation(id: string, dto: any): Promise<any>;
     deleteReservation(id: string): Promise<{
         id: string;
-        createdAt: Date;
         status: string;
-        userId: string;
-        tableId: string | null;
         guestCount: number;
         reservationDate: Date;
         timeSlot: string;
         notes: string | null;
+        createdAt: Date;
+        tableId: string | null;
+        userId: string;
     } | {
         success: boolean;
     }>;
@@ -211,5 +212,21 @@ export declare class OperationsService {
         success: boolean;
         message: string;
         recipientName: any;
+    }>;
+    getCoupons(): Promise<any[]>;
+    createCoupon(dto: any): Promise<{
+        id: string;
+        code: any;
+        discountType: any;
+        value: number;
+        minOrderValue: number;
+        maxDiscount: number | null;
+        expiresAt: Date;
+        active: boolean;
+    }>;
+    toggleCoupon(id: string): Promise<any>;
+    deleteCoupon(id: string): Promise<{
+        success: boolean;
+        deleted: any;
     }>;
 }
