@@ -2,16 +2,20 @@
 
 <br/>
 
-```
-██████╗ ██╗███╗   ██╗███████╗ ██████╗ ██████╗ ███████╗
-██╔══██╗██║████╗  ██║██╔════╝██╔═══██╗██╔══██╗██╔════╝
-██║  ██║██║██╔██╗ ██║█████╗  ██║   ██║██████╔╝███████╗
-██║  ██║██║██║╚██╗██║██╔══╝  ██║   ██║██╔═══╝ ╚════██║
-██████╔╝██║██║ ╚████║███████╗╚██████╔╝██║     ███████║
-╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝     ╚══════╝
-```
+<img src="./dineops-banner.jpg" alt="DineOps — Smarter Restaurants. Stronger Operations." width="600" />
 
-### ✦ &nbsp; **Where Every Meal Becomes a Memorable Experience** &nbsp; ✦
+<br/>
+<br/>
+
+# D I N E O P S
+
+### ✦ &nbsp; Smarter Restaurants. Stronger Operations. &nbsp; ✦
+
+<br/>
+
+[![Live Demo](https://img.shields.io/badge/🌐_LIVE_DEMO-dineops--api.vercel.app-000000?style=for-the-badge&logoColor=white)](https://dineops-api.vercel.app/)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-sonivishal66666%2FDineOps-181717?style=for-the-badge&logo=github)](https://github.com/sonivishal66666/DineOps)
 
 <br/>
 
@@ -20,11 +24,13 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org/)
 [![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://prisma.io/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://framer.com/motion/)
 
 <br/>
 
-> **DineOps** is a production-grade, full-stack restaurant management ecosystem — a single platform that unifies the entire dining experience, from the moment a guest browses the menu to the instant a delivery rider hands over their order.
+> **DineOps** is a production-grade, full-stack restaurant management ecosystem — a single platform that unifies the entire dining experience from menu browsing to delivery handover. Built with enterprise-level architecture and deployed globally on Vercel's edge network with Supabase PostgreSQL.
 
 <br/>
 
@@ -36,9 +42,28 @@
 
 ## ✦ &nbsp; Overview
 
-DineOps is not just a restaurant app. It is a complete **operational command center** — built to the standard of enterprise SaaS products. Seven distinct role-based portals, each crafted with surgical precision, serve every stakeholder in a modern food business: customers, cashiers, chefs, delivery staff, administrators, and executive leadership.
+DineOps is not just a restaurant app — it is a **complete operational command center** built to the standard of enterprise SaaS products like Toast, Petpooja, and Square. Seven distinct role-based portals, each crafted with surgical precision, serve every stakeholder in a modern food business: customers, cashiers, chefs, delivery staff, administrators, and executive leadership.
 
-Every decision in its architecture prioritizes **elegance, resilience, and real-world deployability** — with a zero-compromise offline fallback that keeps every feature fully alive even without a live database.
+Every decision in its architecture prioritizes **elegance, resilience, and real-world deployability** — with a zero-compromise offline fallback that keeps every feature fully alive even without a live database connection.
+
+<br/>
+
+### 🏆 &nbsp; Key Highlights
+
+<div align="center">
+
+| | Feature | Description |
+|:--:|:--|:--|
+| 🎯 | **7 Role-Based Portals** | Customer · Cashier (POS) · Chef (KDS) · Delivery · Admin · Super Admin |
+| 🍕 | **50+ Curated Menu Items** | 8 categories spanning Indian, European, Chinese, Beverages & Desserts |
+| 💳 | **4 Payment Methods** | UPI QR · Debit/Credit Card · Net Banking · Digital Wallet |
+| 🤖 | **AI Concierge Chatbot** | Context-aware menu recommendations & reservation assistance |
+| 🔐 | **Enterprise RBAC** | JWT auth with 7-tier role hierarchy and portal guards |
+| 📊 | **Real-Time Analytics** | Revenue KPIs · Order metrics · Customer reviews with sentiment analysis |
+| 🌍 | **Global Edge Deployment** | Vercel serverless + Supabase PostgreSQL — zero server management |
+| ⚡ | **Dual-Mode Persistence** | Auto-fallback to JSON mock database — 100% feature parity offline |
+
+</div>
 
 <br/>
 
@@ -51,33 +76,40 @@ Every decision in its architecture prioritizes **elegance, resilience, and real-
 <br/>
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                        DINEOPS ARCHITECTURE                         │
-├───────────────────────┬─────────────────────────────────────────────┤
-│   FRONTEND            │   BACKEND                                   │
-│                       │                                             │
-│  Next.js 16           │   NestJS (Node.js)                          │
-│  React 18             │   RESTful API — 26 Endpoints                │
-│  TypeScript           │   JWT Auth + Role Guards                    │
-│  Tailwind CSS         │   Prisma ORM → PostgreSQL                   │
-│  Framer Motion        │   JSON Mock DB (auto-fallback)              │
-│  Lucide React Icons   │   AI Chat Endpoint                          │
-│                       │   Cashfree Payment Integration              │
-└───────────────────────┴─────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────┐
+│                          DINEOPS ARCHITECTURE                           │
+├─────────────────────────┬───────────────────────────────────────────────┤
+│   FRONTEND              │   BACKEND                                     │
+│                         │                                               │
+│  Next.js 16 (App Router)│   NestJS (Node.js Framework)                  │
+│  React 18               │   RESTful API — 26+ Endpoints                 │
+│  TypeScript (Strict)    │   JWT Auth + Role-Based Guards                │
+│  Framer Motion          │   Prisma ORM → PostgreSQL (Supabase)          │
+│  Lucide React Icons     │   JSON Mock DB (auto-fallback)                │
+│                         │   AI Chat Endpoint                            │
+│                         │   Cashfree Payment Simulation                 │
+├─────────────────────────┼───────────────────────────────────────────────┤
+│   DEPLOYMENT            │   DATABASE                                    │
+│                         │                                               │
+│  Vercel (Serverless)    │   Supabase PostgreSQL (Free Tier)             │
+│  Edge Network (Global)  │   Prisma ORM with Full Migrations            │
+│  Auto CI/CD via GitHub  │   Persistent JSON Fallback (Offline Mode)    │
+└─────────────────────────┴───────────────────────────────────────────────┘
 ```
 
 <br/>
 
 | Layer | Technology | Purpose |
 |:--|:--|:--|
-| 🖥 **Frontend** | Next.js 16 · React 18 · TypeScript | App Router, SSR, component UI |
-| 🎨 **Styling** | Tailwind CSS · Framer Motion | Glassmorphism UI, micro-animations |
-| ⚙️ **Backend** | NestJS · TypeScript | REST API with 26 endpoints, RBAC middleware |
-| 🗄 **Database** | PostgreSQL via Prisma ORM | Production data persistence |
-| 🔄 **Fallback DB** | Custom JSON Mock DB | Zero-config offline mode — 100% feature parity |
-| 🔐 **Auth** | JWT Bearer Tokens | Login · Signup · Role-based route guards |
+| 🖥 **Frontend** | Next.js 16 · React 18 · TypeScript | App Router, SSR, component-driven UI |
+| 🎨 **Styling** | CSS · Framer Motion | Premium glassmorphism UI, micro-animations |
+| ⚙️ **Backend** | NestJS · TypeScript | REST API with 26+ endpoints, RBAC middleware |
+| 🗄 **Database** | PostgreSQL via Supabase + Prisma ORM | Cloud-hosted production persistence |
+| 🔄 **Fallback** | Custom JSON Mock DB | Zero-config offline mode — 100% feature parity |
+| 🔐 **Auth** | JWT Bearer Tokens | Login · Signup · 7-tier role guards |
 | 💳 **Payments** | Cashfree Gateway (simulated) | UPI QR · Card · Net Banking · Wallet |
-| 🤖 **AI** | OpenAI-compatible backend endpoint | Context-aware concierge chatbot |
+| 🤖 **AI** | OpenAI-compatible endpoint | Context-aware concierge chatbot |
+| 🚀 **Hosting** | Vercel Serverless + Supabase | Free-tier, globally distributed edge deployment |
 | 🎭 **Design** | Premium dark metallic aesthetic | Amber/gold accents · Glassmorphism · Parallax |
 
 <br/>
@@ -86,16 +118,32 @@ Every decision in its architecture prioritizes **elegance, resilience, and real-
 
 <br/>
 
-## ✦ &nbsp; Quick Start
+## ✦ &nbsp; Live Demo
+
+<br/>
+
+<div align="center">
+
+🌐 **[https://dineops-api.vercel.app](https://dineops-api.vercel.app/)**
+
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+## ✦ &nbsp; Quick Start (Local Development)
 
 <br/>
 
 ### Prerequisites
 
 ```
-Node.js ≥ 18.0.0
-npm ≥ 9.0.0
-PostgreSQL (optional — system works fully without it)
+Node.js  ≥ 18.0.0
+npm      ≥ 9.0.0
+PostgreSQL (optional — the system works fully without it)
 ```
 
 <br/>
@@ -103,8 +151,8 @@ PostgreSQL (optional — system works fully without it)
 ### 1 — Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/dineops.git
-cd dineops
+git clone https://github.com/sonivishal66666/DineOps.git
+cd DineOps
 ```
 
 <br/>
@@ -117,7 +165,6 @@ npm install
 npm run start:dev
 
 # ✓ API Server running at  →  http://localhost:5000
-# ✓ Swagger Docs available →  http://localhost:5000/api/docs
 ```
 
 <br/>
@@ -134,7 +181,154 @@ npm run dev
 
 <br/>
 
-> **⚡ Zero-Config Offline Mode** — If PostgreSQL is not configured, the system automatically falls back to a persistent JSON mock database (`mock-db-persistence.json`). Every single feature — orders, wallets, reservations, reviews, shifts, inventory — works fully in this mode. Data persists across backend restarts. Delete the file to reset to clean seed state.
+> **⚡ Zero-Config Offline Mode** — If PostgreSQL is not configured, the system automatically falls back to a persistent JSON mock database (`mock-db-persistence.json`). Every single feature — orders, wallets, reservations, reviews, shifts, inventory — works fully in this mode. Data persists across backend restarts. Delete the file to reset to a clean seed state.
+
+<br/>
+
+---
+
+<br/>
+
+## ✦ &nbsp; Deployment Guide — Vercel + Supabase (100% Free)
+
+<br/>
+
+This project is deployed **entirely on Vercel's free tier** with **Supabase** as the managed PostgreSQL database — no credit card required, no monthly costs, lifetime free hosting.
+
+<br/>
+
+### Architecture Overview
+
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│                     PRODUCTION DEPLOYMENT                            │
+│                                                                      │
+│   GitHub Repository (sonivishal66666/DineOps)                        │
+│          │                                                           │
+│          ▼                                                           │
+│   ┌─────────────────────────────────────────┐                        │
+│   │           Vercel (Free Tier)            │                        │
+│   │                                         │                        │
+│   │   Frontend  ←  Next.js 16 (Static/SSR) │                        │
+│   │   Backend   ←  NestJS (Serverless Fn)  │                        │
+│   │                                         │                        │
+│   │   Auto-deploy on every git push        │                        │
+│   │   Global CDN edge network              │                        │
+│   └──────────────┬──────────────────────────┘                        │
+│                  │                                                    │
+│                  ▼                                                    │
+│   ┌─────────────────────────────────────────┐                        │
+│   │       Supabase (Free Tier)              │                        │
+│   │                                         │                        │
+│   │   PostgreSQL Database                   │                        │
+│   │   500 MB storage (free)                │                        │
+│   │   Unlimited API requests               │                        │
+│   └─────────────────────────────────────────┘                        │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+<br/>
+
+### Step 1 — Create a Supabase Project (Free Database)
+
+1. Go to **[supabase.com](https://supabase.com/)** and sign up / log in.
+2. Click **"New Project"** and fill in:
+   - **Project name**: `dineops` (or any name)
+   - **Database password**: Choose a strong password (you'll need this)
+   - **Region**: Pick the closest to your users
+3. Once created, go to **Settings → Database** and copy your connection string:
+   ```
+   postgresql://postgres:[YOUR-PASSWORD]@db.[PROJECT-REF].supabase.co:5432/postgres
+   ```
+
+<br/>
+
+### Step 2 — Push Schema to Supabase
+
+```bash
+cd backend
+
+# Set your database URL in .env
+echo "DATABASE_URL=postgresql://postgres:[YOUR-PASSWORD]@db.[PROJECT-REF].supabase.co:5432/postgres" > .env
+
+# Push the Prisma schema to Supabase
+npx prisma db push --accept-data-loss
+
+# Seed the database with sample data
+npx prisma db seed
+```
+
+<br/>
+
+### Step 3 — Deploy to Vercel (Free Hosting)
+
+1. Push your code to GitHub:
+   ```bash
+   git add -A
+   git commit -m "Ready for deployment"
+   git push origin main
+   ```
+
+2. Go to **[vercel.com](https://vercel.com/)** and sign up / log in with your GitHub account.
+
+3. Click **"Add New → Project"** and import your `DineOps` repository.
+
+4. Configure the project:
+   - **Framework Preset**: Next.js
+   - **Root Directory**: `frontend`
+
+5. Add **Environment Variables** in the Vercel dashboard:
+
+   | Variable | Value |
+   |:--|:--|
+   | `NEXT_PUBLIC_API_URL` | `https://your-backend-url.vercel.app/api` |
+
+6. Click **Deploy** — Vercel will build and deploy automatically.
+
+<br/>
+
+### Step 4 — Deploy the Backend API
+
+1. Create a **second Vercel project** for the backend, or use a monorepo configuration.
+
+2. For the backend project, set the **Root Directory** to `backend` and add these environment variables:
+
+   | Variable | Value |
+   |:--|:--|
+   | `DATABASE_URL` | `postgresql://postgres:[PASSWORD]@db.[REF].supabase.co:5432/postgres` |
+   | `JWT_SECRET` | Your JWT signing secret (any secure string) |
+   | `VERCEL` | `true` |
+
+3. The backend includes a `vercel.json` configuration that adapts NestJS for serverless deployment — no additional configuration required.
+
+<br/>
+
+### Step 5 — Verify Deployment
+
+```bash
+# Test the backend health
+curl https://your-backend-url.vercel.app/api/menu/categories
+
+# Expected: JSON array of menu categories
+```
+
+<br/>
+
+### 💡 &nbsp; Deployment Tips
+
+- **Auto CI/CD**: Every `git push` to `main` triggers an automatic rebuild and deploy on Vercel.
+- **Zero Cold Starts**: Vercel's edge network keeps functions warm for fast response times.
+- **Serverless Adaptation**: The backend writes the mock database to `/tmp` in serverless mode (read-only filesystem workaround).
+- **Free Forever**: Both Vercel (Hobby plan) and Supabase (Free tier) offer lifetime free hosting with generous limits.
+
+<br/>
+
+### 📋 &nbsp; Free Tier Limits
+
+| Service | Plan | Limits |
+|:--|:--|:--|
+| **Vercel** | Hobby (Free) | 100 GB bandwidth/month · Serverless functions · Custom domains |
+| **Supabase** | Free | 500 MB database · 2 GB bandwidth · 50K monthly active users |
 
 <br/>
 
@@ -175,7 +369,7 @@ npm run dev
 <br/>
 
 ```
-https://dineops.app/
+https://dineops-api.vercel.app/
 │
 ├── /                    ← Customer Portal         (Public + Authenticated Customers)
 ├── /pos                 ← POS Cashier Terminal    (CASHIER role)
@@ -210,7 +404,7 @@ All staff portals are protected by `PortalAuthGuard` — unauthorized access ren
 - **Voice search simulation** — mic click auto-populates a contextual query
 - **Dietary filter toggles** — Vegetarian Only · Keto Friendly · Gluten Free
 - **Scrollable category sidebar** — pinned for quick navigation
-- **Item customization modals** — portion sizes, add-ons, extras with dynamic pricing
+- **Item customization modals** — portion sizes, add-ons, extras with dynamic pricing (pizza items only)
 - **Shimmer skeleton loaders** — premium lazy loading with fade-in
 - **Hover zoom & parallax** — images scale on card hover with smooth easing
 - **Chef's Pick badges** on popular items
@@ -377,8 +571,9 @@ CUSTOMER     ←  Public-facing portal
 ### 🗄 &nbsp; Dual-Mode Persistence
 
 ```
-Production Mode  →  PostgreSQL via Prisma ORM
+Production Mode  →  PostgreSQL via Supabase + Prisma ORM
                      └─ Full schema, migrations, relational integrity
+                     └─ Cloud-hosted, auto-backups, globally accessible
 
 Offline Mode     →  JSON Mock Database (auto-generated)
                      └─ mock-db-persistence.json
@@ -410,60 +605,64 @@ Offline Mode     →  JSON Mock Database (auto-generated)
 <br/>
 
 ```
-dineops/
+DineOps/
 │
 ├── 📁 backend/
+│   ├── prisma/
+│   │   ├── schema.prisma              # Full database schema (20+ models)
+│   │   └── seed.ts                    # Database seeding script
 │   └── src/
 │       ├── auth/
-│       │   ├── auth.controller.ts         # Login · Signup · Profile · Notifications · User Roles
-│       │   └── auth.service.ts            # JWT auth · Wallet read/write · Profile CRUD
+│       │   ├── auth.controller.ts     # Login · Signup · Profile · Notifications · Roles
+│       │   └── auth.service.ts        # JWT auth · Wallet · Profile CRUD
 │       │
 │       ├── orders/
-│       │   ├── orders.controller.ts       # Place order · Get orders · Update status · OTP verify
-│       │   └── orders.service.ts          # Order creation · Coupon · Inventory deduction · Wallet deduct
+│       │   ├── orders.controller.ts   # Place order · Get orders · Status · OTP verify
+│       │   └── orders.service.ts      # Order flow · Coupon · Inventory · Wallet
 │       │
 │       ├── menu/
-│       │   ├── menu.controller.ts         # Categories & menu items CRUD
+│       │   ├── menu.controller.ts     # Categories & menu items CRUD
 │       │   └── menu.service.ts
 │       │
 │       ├── operations/
-│       │   ├── operations.controller.ts   # Tables · Inventory · Shifts · AI · Reservations · Reviews · Gifts
-│       │   └── operations.service.ts      # Gift voucher credit · Review sentiment · Table management
+│       │   ├── operations.controller.ts  # Tables · Inventory · Shifts · AI · Reviews
+│       │   └── operations.service.ts     # Gift cards · Reviews · Table management
 │       │
 │       └── prisma/
-│           ├── mock-db.service.ts         # In-memory mock database with disk persistence & seeding
-│           └── prisma.service.ts          # Prisma ORM (production database connector)
+│           ├── mock-db.service.ts     # In-memory mock database with disk persistence
+│           └── prisma.service.ts      # Prisma ORM connector (auto-detects database)
 │
 ├── 📁 frontend/
 │   └── src/app/
-│       ├── page.tsx                       # App shell — routing · sync loop · notification polling
+│       ├── page.tsx                   # App shell — routing · sync loop · notifications
 │       │
 │       ├── components/
-│       │   ├── CustomerPortal.tsx         # Full customer UI: menu · cart · checkout · gifting · reservations
-│       │   ├── Navbar.tsx                 # Role-aware navigation · notification bell · profile dropdown
-│       │   ├── MyOrdersModal.tsx          # Live order tracker · review form · status stepper
-│       │   ├── MyReservationsModal.tsx    # Reservation history: Past · Today · Upcoming
-│       │   ├── MyProfileModal.tsx         # Profile tabs: details · wallet · bookings · subscriptions
-│       │   ├── InventoryStaff.tsx         # Admin tabs: inventory · attendance · table reservations
-│       │   ├── AnalyticsDashboard.tsx     # Super Admin revenue & order analytics
-│       │   ├── RBACMatrix.tsx             # Role permission matrix visualization
-│       │   ├── POSTerminal.tsx            # POS cashier terminal interface
-│       │   ├── KitchenKDS.tsx             # Kitchen display system
-│       │   ├── DeliveryDashboard.tsx      # Delivery rider portal
-│       │   ├── PortalAuthGuard.tsx        # Auth wrapper for all staff portals
-│       │   ├── AccessDeniedModal.tsx      # Premium access denied overlay
-│       │   └── PremiumAlertModal.tsx      # Reusable alert modal (replaces all browser alerts)
+│       │   ├── CustomerPortal.tsx     # Full customer UI: menu · cart · checkout
+│       │   ├── Navbar.tsx             # Role-aware navigation · notifications · profile
+│       │   ├── MyOrdersModal.tsx      # Live order tracker · review form
+│       │   ├── MyReservationsModal.tsx # Reservation history
+│       │   ├── MyProfileModal.tsx     # Profile · wallet · bookings · subscriptions
+│       │   ├── InventoryStaff.tsx     # Admin: inventory · attendance · reservations
+│       │   ├── AnalyticsDashboard.tsx # Super Admin revenue & order analytics
+│       │   ├── RBACMatrix.tsx         # Role permission matrix
+│       │   ├── POSTerminal.tsx        # POS cashier terminal
+│       │   ├── KitchenKDS.tsx         # Kitchen display system
+│       │   ├── DeliveryDashboard.tsx  # Delivery rider portal
+│       │   ├── PortalAuthGuard.tsx    # Auth wrapper for staff portals
+│       │   ├── AccessDeniedModal.tsx  # Premium access denied overlay
+│       │   └── PremiumAlertModal.tsx  # Reusable alert modal
 │       │
-│       ├── super-admin/page.tsx           # Super Admin HQ: analytics · users · reviews
-│       ├── admin/page.tsx                 # Admin operations panel
-│       ├── kds/page.tsx                   # Kitchen display system
-│       ├── pos/page.tsx                   # POS cashier terminal
-│       └── delivery/page.tsx              # Delivery rider dashboard
+│       ├── super-admin/page.tsx       # Super Admin HQ
+│       ├── admin/page.tsx             # Admin operations panel
+│       ├── kds/page.tsx               # Kitchen display system
+│       ├── pos/page.tsx               # POS cashier terminal
+│       └── delivery/page.tsx          # Delivery rider dashboard
 │
-├── 📁 public/menu/                        # 47 high-resolution food images (all menu items)
-├── mock-db-persistence.json               # Auto-generated persistent mock DB (delete to reset)
-├── schema.sql                             # PostgreSQL schema reference
-├── docker-compose.yml                     # Docker setup for PostgreSQL
+├── 📁 public/menu/                    # High-resolution food images
+├── dineops-banner.jpg                 # Brand logo banner
+├── vercel.json                        # Vercel deployment configuration
+├── schema.sql                         # PostgreSQL schema reference
+├── docker-compose.yml                 # Docker setup for local PostgreSQL
 └── README.md
 ```
 
@@ -494,16 +693,17 @@ dineops/
 | Method | Endpoint | Description |
 |:--|:--|:--|
 | `GET` | `/api/menu/categories` | Retrieve all menu categories |
-| `GET` | `/api/menu/items` | Retrieve all menu items |
+| `GET` | `/api/menu/items` | Retrieve all menu items with customizations |
 
 ### Order Endpoints
 
 | Method | Endpoint | Description |
 |:--|:--|:--|
 | `POST` | `/api/orders/place` | Place a new order with items, type, coupon |
-| `GET` | `/api/orders` | Retrieve all orders |
-| `PUT` | `/api/orders/:id/status` | Advance order status (KDS / Delivery rider) |
+| `GET` | `/api/orders` | Retrieve all orders (role-filtered) |
+| `PUT` | `/api/orders/:id/status` | Advance order status (KDS / Delivery) |
 | `POST` | `/api/orders/:id/otp-verify` | Verify delivery handover OTP |
+| `GET` | `/api/orders/:id/split-bill` | Split bill among guests |
 
 ### Operations Endpoints
 
@@ -600,7 +800,7 @@ User logs in again → now sees Kitchen Display System
 
 <br/>
 
-## ✦ &nbsp; Docker Setup (PostgreSQL)
+## ✦ &nbsp; Docker Setup (Local PostgreSQL)
 
 <br/>
 
@@ -612,6 +812,9 @@ docker-compose up -d
 cd backend
 npx prisma migrate dev --name init
 npx prisma generate
+
+# Seed the database
+npx prisma db seed
 
 # The system will automatically detect the database
 # and switch from mock mode to production mode
@@ -629,22 +832,23 @@ npx prisma generate
 
 <br/>
 
-```
- ✦  Built with precision. Designed with passion.  ✦
-```
+<img src="./dineops-banner.jpg" alt="DineOps" width="200" />
+
+<br/>
+<br/>
+
+**D I N E O P S**
+
+*Smarter Restaurants. Stronger Operations.*
 
 <br/>
 
-**DineOps** · Premium Restaurant Operations Platform
-
-*Crafted Flavors. Exceptional Service. Unforgettable Dining.*
-
-<br/>
-
-![TypeScript](https://img.shields.io/badge/TypeScript-100%25-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-amber?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=flat-square)
-![Made with](https://img.shields.io/badge/Made_with-❤️_by_Vishal_Soni-ff6b6b?style=flat-square)
+[![TypeScript](https://img.shields.io/badge/TypeScript-100%25-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-MIT-amber?style=flat-square)](./LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=flat-square)](https://dineops-api.vercel.app/)
+[![Deployed on](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=flat-square&logo=vercel)](https://vercel.com/)
+[![Database](https://img.shields.io/badge/Database-Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
+[![Made with](https://img.shields.io/badge/Made_with-❤️_by_Vishal_Soni-ff6b6b?style=flat-square)](https://github.com/sonivishal66666)
 
 <br/>
 
