@@ -85,6 +85,19 @@ let MockDbService = MockDbService_1 = class MockDbService {
         }
     }
     getPersistencePath() {
+        if (process.env.VERCEL) {
+            const tempPath = path.join('/tmp', 'mock-db-persistence.json');
+            if (!fs.existsSync(tempPath)) {
+                const rootPath = path.join(process.cwd(), 'mock-db-persistence.json');
+                if (fs.existsSync(rootPath)) {
+                    try {
+                        fs.copyFileSync(rootPath, tempPath);
+                    }
+                    catch (e) { }
+                }
+            }
+            return tempPath;
+        }
         return path.join(process.cwd(), 'mock-db-persistence.json');
     }
     loadFromDisk() {

@@ -4,16 +4,16 @@ export declare class OperationsService {
     private prisma;
     private mockDb;
     constructor(prisma: PrismaService, mockDb: MockDbService);
-    getTables(branchId?: string): Promise<{
+    getTables(branchId?: string): Promise<import("../prisma/mock-db.service").MockTable[] | {
         id: string;
-        branchId: string;
         tableNumber: string;
         capacity: number;
         status: import("@prisma/client").$Enums.TableStatus;
         waiterNeeded: boolean;
         billRequested: boolean;
         qrCode: string | null;
-    }[] | import("../prisma/mock-db.service").MockTable[]>;
+        branchId: string;
+    }[]>;
     reserveTable(dto: any, userId: string): Promise<{
         id: string;
         tableId: any;
@@ -30,44 +30,44 @@ export declare class OperationsService {
         billRequested?: boolean;
     }): Promise<{
         id: string;
-        branchId: string;
         tableNumber: string;
         capacity: number;
         status: import("@prisma/client").$Enums.TableStatus;
         waiterNeeded: boolean;
         billRequested: boolean;
         qrCode: string | null;
+        branchId: string;
     } | import("../prisma/mock-db.service").MockTable>;
-    getInventory(branchId?: string): Promise<({
+    getInventory(branchId?: string): Promise<import("../prisma/mock-db.service").MockInventory[] | ({
         movements: {
             id: string;
             createdAt: Date;
-            quantity: import("@prisma/client/runtime/library").Decimal;
-            inventoryItemId: string;
             type: import("@prisma/client").$Enums.MovementType;
+            quantity: import("@prisma/client/runtime/library").Decimal;
             reason: string | null;
+            inventoryItemId: string;
         }[];
     } & {
         id: string;
-        branchId: string;
         name: string;
         createdAt: Date;
-        sku: string;
+        updatedAt: Date;
+        branchId: string;
         quantity: import("@prisma/client/runtime/library").Decimal;
+        sku: string;
         unit: string;
         minStockLevel: import("@prisma/client/runtime/library").Decimal;
         supplierName: string | null;
         supplierEmail: string | null;
         expiryDate: Date | null;
-        updatedAt: Date;
-    })[] | import("../prisma/mock-db.service").MockInventory[]>;
+    })[]>;
     addInventoryMovement(dto: any): Promise<{
         id: string;
         createdAt: Date;
-        quantity: import("@prisma/client/runtime/library").Decimal;
-        inventoryItemId: string;
         type: import("@prisma/client").$Enums.MovementType;
+        quantity: import("@prisma/client/runtime/library").Decimal;
         reason: string | null;
+        inventoryItemId: string;
     } | {
         success: boolean;
         updatedStock: number;
@@ -75,19 +75,19 @@ export declare class OperationsService {
     getShifts(branchId?: string): Promise<({
         user: {
             id: string;
-            name: string;
-            createdAt: Date;
-            updatedAt: Date;
             email: string;
             password: string;
+            name: string;
             phone: string | null;
             role: import("@prisma/client").$Enums.Role;
+            createdAt: Date;
+            updatedAt: Date;
         };
     } & {
         id: string;
-        branchId: string;
-        status: import("@prisma/client").$Enums.ShiftStatus;
         createdAt: Date;
+        status: import("@prisma/client").$Enums.ShiftStatus;
+        branchId: string;
         userId: string;
         startTime: Date;
         endTime: Date;
@@ -108,9 +108,9 @@ export declare class OperationsService {
     }[]>;
     clockShift(shiftId: string, type: 'IN' | 'OUT'): Promise<import("../prisma/mock-db.service").MockShift | {
         id: string;
-        branchId: string;
-        status: import("@prisma/client").$Enums.ShiftStatus;
         createdAt: Date;
+        status: import("@prisma/client").$Enums.ShiftStatus;
+        branchId: string;
         userId: string;
         startTime: Date;
         endTime: Date;
@@ -185,14 +185,14 @@ export declare class OperationsService {
     updateReservation(id: string, dto: any): Promise<any>;
     deleteReservation(id: string): Promise<{
         id: string;
+        createdAt: Date;
         status: string;
+        userId: string;
+        tableId: string | null;
         guestCount: number;
         reservationDate: Date;
         timeSlot: string;
         notes: string | null;
-        createdAt: Date;
-        tableId: string | null;
-        userId: string;
     } | {
         success: boolean;
     }>;
