@@ -92,14 +92,7 @@ export default function Navbar({
 
       {/* Right controls */}
       <div className="flex items-center gap-4">
-        {/* Language Toggler */}
-        <button
-          onClick={() => onChangeLang(lang === 'EN' ? 'HI' : 'EN')}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border border-amber-500/20 hover:border-amber-500/40 bg-white/5 hover:bg-amber-500/5 text-amber-400 transition-all duration-300"
-        >
-          <Languages className="w-3.5 h-3.5" />
-          <span>{lang === 'EN' ? '🇺🇸 English' : '🇮🇳 हिंदी'}</span>
-        </button>
+
 
         {/* Notifications Bell */}
         <div className="relative">

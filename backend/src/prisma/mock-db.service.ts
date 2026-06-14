@@ -323,7 +323,7 @@ export class MockDbService {
           isPopular: index < 3,
           isTrending: index >= 3 && index < 6,
           active: true,
-          customizations: [
+          customizations: name.toLowerCase().includes('pizza') ? [
             {
               id: `custom-gp-1-${counter}`,
               name: 'Select Portion Size',
@@ -345,7 +345,7 @@ export class MockDbService {
                 { id: `opt-5-${counter}`, name: 'Gourmet Mushrooms', price: 70, isDefault: false }
               ]
             }
-          ]
+          ] : []
         });
       });
     }
