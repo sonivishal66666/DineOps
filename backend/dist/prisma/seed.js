@@ -38,6 +38,12 @@ const bcrypt = __importStar(require("bcrypt"));
 const prisma = new client_1.PrismaClient();
 async function main() {
     console.log('Seeding Database with BrewHub Enterprise defaults...');
+    await prisma.orderItem.deleteMany();
+    await prisma.order.deleteMany();
+    await prisma.table.deleteMany();
+    await prisma.menuItem.deleteMany();
+    await prisma.menuCategory.deleteMany();
+    await prisma.branch.deleteMany();
     const superAdminHash = await bcrypt.hash('admin', 10);
     const superAdmin = await prisma.user.upsert({
         where: { email: 'admin@admin' },
@@ -56,10 +62,10 @@ async function main() {
         }
     });
     const customer = await prisma.user.upsert({
-        where: { email: 'customer@brewhub.com' },
+        where: { email: 'customer@dineops.com' },
         update: {},
         create: {
-            email: 'customer@brewhub.com',
+            email: 'customer@dineops.com',
             password: await bcrypt.hash('password123', 10),
             name: 'Vishaal Kumar',
             role: client_1.Role.CUSTOMER,
@@ -83,8 +89,6 @@ async function main() {
         }
     });
     console.log(`Branch seeded: ${mainBranch.name}`);
-    await prisma.menuItem.deleteMany();
-    await prisma.menuCategory.deleteMany();
     const categories = [
         { id: 'cat-breakfast', name: 'Breakfast Specials', description: 'Morning dosas, fluffy blueberry pancakes, and light starters', sortOrder: 1 },
         { id: 'cat-italian', name: 'Italian & Pastas', description: 'Wood-fired pizzas, slow-cooked lasagna, and creamy fettuccine', sortOrder: 2 },
@@ -118,6 +122,7 @@ async function main() {
         { id: 'item-14', categoryId: 'cat-desserts', name: 'Warm Chocolate Lava Cake with Gelato', price: 150, isVeg: true, calories: 410, image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&auto=format&fit=crop' }
     ];
     for (const item of menuItems) {
+        const hasCustomization = item.name.toLowerCase().includes('pizza');
         await prisma.menuItem.upsert({
             where: { id: item.id },
             update: {},
@@ -130,7 +135,7 @@ async function main() {
                 calories: item.calories,
                 image: item.image,
                 active: true,
-                customizations: {
+                customizations: hasCustomization ? {
                     create: {
                         name: 'Select Size',
                         minSelect: 1,
@@ -142,7 +147,7 @@ async function main() {
                             ]
                         }
                     }
-                }
+                } : undefined
             }
         });
     }
@@ -160,6 +165,52 @@ async function main() {
         });
     }
     console.log('Tables layout seeded.');
+    await prisma.order.create({
+        data: {
+            branchId: mainBranch.id,
+            customerId: customer.id,
+            orderNumber: 'BH-2026-9042',
+            status: 'PREPARING',
+            type: 'DINE_IN',
+            subtotal: 760,
+            tax: 38.00,
+            deliveryFee: 0,
+            discount: 0,
+            total: 798,
+            paymentMethod: 'UPI',
+            paymentStatus: 'PAID',
+            paymentTransactionId: 'TXN-SEED-1',
+            items: {
+                create: [
+                    { menuItemId: 'item-7', quantity: 2, price: 380, subtotal: 760 }
+                ]
+            }
+        }
+    });
+    await prisma.order.create({
+        data: {
+            branchId: mainBranch.id,
+            customerId: customer.id,
+            orderNumber: 'BH-2026-9043',
+            status: 'DELIVERED',
+            type: 'DELIVERY',
+            subtotal: 900,
+            tax: 45.00,
+            deliveryFee: 40,
+            discount: 0,
+            total: 985,
+            paymentMethod: 'UPI',
+            paymentStatus: 'PAID',
+            paymentTransactionId: 'TXN-SEED-2',
+            deliveryAddress: 'Apt 4B, Signature Residency, Bandra',
+            items: {
+                create: [
+                    { menuItemId: 'item-4', quantity: 2, price: 450, subtotal: 900 }
+                ]
+            }
+        }
+    });
+    console.log('Orders seeded.');
     console.log('Database seeding finished successfully!');
 }
 main()

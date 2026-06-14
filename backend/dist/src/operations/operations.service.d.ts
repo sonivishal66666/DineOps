@@ -187,8 +187,8 @@ export declare class OperationsService {
         id: string;
         createdAt: Date;
         status: string;
-        userId: string;
         tableId: string | null;
+        userId: string;
         guestCount: number;
         reservationDate: Date;
         timeSlot: string;

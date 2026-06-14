@@ -79,54 +79,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-2",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-2",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-2",
-              "name": "Grande / Large Size",
-              "price": 191,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-2",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-2",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-2",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-2",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-2",
@@ -149,54 +102,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-3",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-3",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-3",
-              "name": "Grande / Large Size",
-              "price": 159,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-3",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-3",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-3",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-3",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-3",
@@ -220,54 +126,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-4",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-4",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-4",
-              "name": "Grande / Large Size",
-              "price": 193,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-4",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-4",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-4",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-4",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-4",
@@ -288,54 +147,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-5",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-5",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-5",
-              "name": "Grande / Large Size",
-              "price": 142,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-5",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-5",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-5",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-5",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-5",
@@ -358,54 +170,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-6",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-6",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-6",
-              "name": "Grande / Large Size",
-              "price": 87,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-6",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-6",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-6",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-6",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-6",
@@ -428,54 +193,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-7",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-7",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-7",
-              "name": "Grande / Large Size",
-              "price": 98,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-7",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-7",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-7",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-7",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-7",
@@ -496,54 +214,7 @@
       "isPopular": false,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-8",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-8",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-8",
-              "name": "Grande / Large Size",
-              "price": 178,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-8",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-8",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-8",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-8",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-8",
@@ -566,54 +237,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-9",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-9",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-9",
-              "name": "Grande / Large Size",
-              "price": 238,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-9",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-9",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-9",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-9",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-9",
@@ -636,54 +260,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-10",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-10",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-10",
-              "name": "Grande / Large Size",
-              "price": 254,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-10",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-10",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-10",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-10",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-10",
@@ -775,54 +352,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-12",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-12",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-12",
-              "name": "Grande / Large Size",
-              "price": 98,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-12",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-12",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-12",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-12",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-12",
@@ -845,54 +375,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-13",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-13",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-13",
-              "name": "Grande / Large Size",
-              "price": 169,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-13",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-13",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-13",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-13",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-13",
@@ -915,54 +398,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-14",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-14",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-14",
-              "name": "Grande / Large Size",
-              "price": 158,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-14",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-14",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-14",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-14",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-14",
@@ -985,54 +421,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-15",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-15",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-15",
-              "name": "Grande / Large Size",
-              "price": 94,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-15",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-15",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-15",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-15",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-15",
@@ -1055,54 +444,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-16",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-16",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-16",
-              "name": "Grande / Large Size",
-              "price": 228,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-16",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-16",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-16",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-16",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-16",
@@ -1126,54 +468,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-17",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-17",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-17",
-              "name": "Grande / Large Size",
-              "price": 238,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-17",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-17",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-17",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-17",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-17",
@@ -1194,54 +489,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-18",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-18",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-18",
-              "name": "Grande / Large Size",
-              "price": 262,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-18",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-18",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-18",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-18",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-18",
@@ -1264,54 +512,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-19",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-19",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-19",
-              "name": "Grande / Large Size",
-              "price": 273,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-19",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-19",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-19",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-19",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-19",
@@ -1334,54 +535,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-20",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-20",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-20",
-              "name": "Grande / Large Size",
-              "price": 122,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-20",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-20",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-20",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-20",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-20",
@@ -1404,54 +558,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-21",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-21",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-21",
-              "name": "Grande / Large Size",
-              "price": 132,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-21",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-21",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-21",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-21",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-21",
@@ -1474,54 +581,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-22",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-22",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-22",
-              "name": "Grande / Large Size",
-              "price": 196,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-22",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-22",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-22",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-22",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-22",
@@ -1545,54 +605,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-23",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-23",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-23",
-              "name": "Grande / Large Size",
-              "price": 277,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-23",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-23",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-23",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-23",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-23",
@@ -1613,54 +626,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-24",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-24",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-24",
-              "name": "Grande / Large Size",
-              "price": 88,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-24",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-24",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-24",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-24",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-24",
@@ -1683,54 +649,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-25",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-25",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-25",
-              "name": "Grande / Large Size",
-              "price": 155,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-25",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-25",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-25",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-25",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-25",
@@ -1753,54 +672,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-26",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-26",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-26",
-              "name": "Grande / Large Size",
-              "price": 160,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-26",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-26",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-26",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-26",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-26",
@@ -1821,54 +693,7 @@
       "isPopular": false,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-27",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-27",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-27",
-              "name": "Grande / Large Size",
-              "price": 272,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-27",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-27",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-27",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-27",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-27",
@@ -1891,54 +716,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-28",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-28",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-28",
-              "name": "Grande / Large Size",
-              "price": 89,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-28",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-28",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-28",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-28",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-28",
@@ -1961,54 +739,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-29",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-29",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-29",
-              "name": "Grande / Large Size",
-              "price": 78,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-29",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-29",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-29",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-29",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-29",
@@ -2032,54 +763,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-30",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-30",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-30",
-              "name": "Grande / Large Size",
-              "price": 211,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-30",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-30",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-30",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-30",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-30",
@@ -2100,54 +784,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-31",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-31",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-31",
-              "name": "Grande / Large Size",
-              "price": 159,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-31",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-31",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-31",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-31",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-31",
@@ -2170,54 +807,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-32",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-32",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-32",
-              "name": "Grande / Large Size",
-              "price": 210,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-32",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-32",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-32",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-32",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-32",
@@ -2240,54 +830,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-33",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-33",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-33",
-              "name": "Grande / Large Size",
-              "price": 238,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-33",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-33",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-33",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-33",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-33",
@@ -2308,54 +851,7 @@
       "isPopular": false,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-34",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-34",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-34",
-              "name": "Grande / Large Size",
-              "price": 122,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-34",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-34",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-34",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-34",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-34",
@@ -2378,54 +874,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-35",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-35",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-35",
-              "name": "Grande / Large Size",
-              "price": 275,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-35",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-35",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-35",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-35",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-35",
@@ -2448,54 +897,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-36",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-36",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-36",
-              "name": "Grande / Large Size",
-              "price": 267,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-36",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-36",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-36",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-36",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-36",
@@ -2519,54 +921,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-37",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-37",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-37",
-              "name": "Grande / Large Size",
-              "price": 81,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-37",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-37",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-37",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-37",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-37",
@@ -2589,54 +944,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-38",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-38",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-38",
-              "name": "Grande / Large Size",
-              "price": 129,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-38",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-38",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-38",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-38",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-38",
@@ -2659,54 +967,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-39",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-39",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-39",
-              "name": "Grande / Large Size",
-              "price": 222,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-39",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-39",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-39",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-39",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-39",
@@ -2730,54 +991,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-40",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-40",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-40",
-              "name": "Grande / Large Size",
-              "price": 132,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-40",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-40",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-40",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-40",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-40",
@@ -2798,54 +1012,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-41",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-41",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-41",
-              "name": "Grande / Large Size",
-              "price": 91,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-41",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-41",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-41",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-41",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-41",
@@ -2868,54 +1035,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-42",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-42",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-42",
-              "name": "Grande / Large Size",
-              "price": 213,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-42",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-42",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-42",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-42",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-42",
@@ -2938,54 +1058,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-43",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-43",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-43",
-              "name": "Grande / Large Size",
-              "price": 211,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-43",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-43",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-43",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-43",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-43",
@@ -3006,54 +1079,7 @@
       "isPopular": false,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-44",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-44",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-44",
-              "name": "Grande / Large Size",
-              "price": 196,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-44",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-44",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-44",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-44",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-44",
@@ -3076,54 +1102,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-45",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-45",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-45",
-              "name": "Grande / Large Size",
-              "price": 56,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-45",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-45",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-45",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-45",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-45",
@@ -3146,54 +1125,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-46",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-46",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-46",
-              "name": "Grande / Large Size",
-              "price": 56,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-46",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-46",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-46",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-46",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-46",
@@ -3217,54 +1149,7 @@
       "isPopular": true,
       "isTrending": false,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-47",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-47",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-47",
-              "name": "Grande / Large Size",
-              "price": 179,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-47",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-47",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-47",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-47",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-47",
@@ -3285,54 +1170,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-48",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-48",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-48",
-              "name": "Grande / Large Size",
-              "price": 93,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-48",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-48",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-48",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-48",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-48",
@@ -3355,54 +1193,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-49",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-49",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-49",
-              "name": "Grande / Large Size",
-              "price": 242,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-49",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-49",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-49",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-49",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     },
     {
       "id": "item-49",
@@ -3425,54 +1216,7 @@
       "isPopular": false,
       "isTrending": true,
       "active": true,
-      "customizations": [
-        {
-          "id": "custom-gp-1-50",
-          "name": "Select Portion Size",
-          "minSelect": 1,
-          "maxSelect": 1,
-          "options": [
-            {
-              "id": "opt-1-50",
-              "name": "Regular Size",
-              "price": 0,
-              "isDefault": true
-            },
-            {
-              "id": "opt-2-50",
-              "name": "Grande / Large Size",
-              "price": 101,
-              "isDefault": false
-            }
-          ]
-        },
-        {
-          "id": "custom-gp-2-50",
-          "name": "Add Extra Toppings",
-          "minSelect": 0,
-          "maxSelect": 4,
-          "options": [
-            {
-              "id": "opt-3-50",
-              "name": "Truffle Drizzle",
-              "price": 80,
-              "isDefault": false
-            },
-            {
-              "id": "opt-4-50",
-              "name": "Extra Cheddar Cheese",
-              "price": 50,
-              "isDefault": false
-            },
-            {
-              "id": "opt-5-50",
-              "name": "Gourmet Mushrooms",
-              "price": 70,
-              "isDefault": false
-            }
-          ]
-        }
-      ]
+      "customizations": []
     }
   ],
   "branches": [

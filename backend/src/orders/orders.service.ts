@@ -156,9 +156,15 @@ export class OrdersService {
             })),
           },
         },
-        include: { items: true },
+        include: { items: { include: { menuItem: true } } },
       });
-      return created;
+      return {
+        ...created,
+        items: created.items.map(ri => ({
+          ...ri,
+          name: ri.menuItem?.name || 'Unknown Item',
+        })),
+      };
     } else {
       const mockCreated: any = {
         id: `ord-${Date.now()}`,
@@ -272,11 +278,18 @@ export class OrdersService {
           { status: 'OUT_FOR_DELIVERY', deliveryStaffId: userId },
         ];
       }
-      return this.prisma.order.findMany({
+      const dbOrders = await this.prisma.order.findMany({
         where,
-        include: { items: true },
+        include: { items: { include: { menuItem: true } } },
         orderBy: { createdAt: 'desc' },
       });
+      return dbOrders.map(o => ({
+        ...o,
+        items: o.items.map(it => ({
+          ...it,
+          name: it.menuItem?.name || 'Unknown Item',
+        })),
+      }));
     } else {
       let list = [...this.mockDb.orders];
       if (role === 'CUSTOMER' && userId) {
