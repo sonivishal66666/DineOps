@@ -441,6 +441,28 @@ let MockDbService = MockDbService_1 = class MockDbService {
                 items: [
                     { menuItemId: 'item-61', name: 'Signature Lava Cake with Gelato', quantity: 1, price: 450, subtotal: 450 }
                 ]
+            },
+            {
+                id: 'ord-104',
+                branchId: 'br-1',
+                customerId: 'user-superadmin',
+                orderNumber: 'BH-2026-9045',
+                status: 'DELIVERED',
+                type: 'DINE_IN',
+                subtotal: 500,
+                tax: 25,
+                deliveryFee: 0,
+                discount: 0,
+                total: 525,
+                paymentMethod: 'UPI',
+                paymentStatus: 'PAID',
+                paymentTransactionId: 'TXN-UPI-71049284',
+                createdAt: new Date(Date.now() - 180 * 60 * 1000),
+                otpVerified: true,
+                items: [
+                    { menuItemId: 'item-27', name: 'Mumbai Special Vada Pav (2pcs)', quantity: 2, price: 90, subtotal: 180 },
+                    { menuItemId: 'item-44', name: 'Classic Espresso Tiramisu', quantity: 1, price: 210, subtotal: 210 }
+                ]
             }
         ];
         this.coupons = [

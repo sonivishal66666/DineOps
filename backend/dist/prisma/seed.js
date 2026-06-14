@@ -210,6 +210,29 @@ async function main() {
             }
         }
     });
+    await prisma.order.create({
+        data: {
+            branchId: mainBranch.id,
+            customerId: superAdmin.id,
+            orderNumber: 'BH-2026-9045',
+            status: 'DELIVERED',
+            type: 'DINE_IN',
+            subtotal: 510,
+            tax: 25.50,
+            deliveryFee: 0,
+            discount: 0,
+            total: 535.50,
+            paymentMethod: 'CARD',
+            paymentStatus: 'PAID',
+            paymentTransactionId: 'TXN-SEED-3',
+            items: {
+                create: [
+                    { menuItemId: 'item-13', quantity: 1, price: 180, subtotal: 180 },
+                    { menuItemId: 'item-10', quantity: 1, price: 330, subtotal: 330 }
+                ]
+            }
+        }
+    });
     console.log('Orders seeded.');
     console.log('Database seeding finished successfully!');
 }

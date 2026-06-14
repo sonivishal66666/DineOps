@@ -144,7 +144,13 @@ export default function MyOrdersModal({ isOpen, onClose, orders, currentUser }: 
 
   // Filter orders that belong to this customer
   const myOrders = orders.filter(o => 
-    currentUser && (o.customerEmail === currentUser.email || o.customerId === currentUser.id || currentUser.email === 'customer@dineops.com')
+    currentUser && (
+      o.customerEmail === currentUser.email || 
+      o.customerId === currentUser.id || 
+      currentUser.email === 'customer@dineops.com' ||
+      currentUser.role === 'SUPER_ADMIN' ||
+      currentUser.role === 'ADMIN'
+    )
   );
 
   const activeOrders = myOrders.filter(o => 

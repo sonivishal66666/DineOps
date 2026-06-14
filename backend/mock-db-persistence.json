@@ -1695,6 +1695,40 @@
           "customizations": null
         }
       ]
+    },
+    {
+      "id": "ord-104",
+      "branchId": "br-1",
+      "customerId": "user-superadmin",
+      "orderNumber": "BH-2026-9045",
+      "status": "DELIVERED",
+      "type": "DINE_IN",
+      "subtotal": 500,
+      "tax": 25,
+      "deliveryFee": 0,
+      "discount": 0,
+      "total": 525,
+      "paymentMethod": "UPI",
+      "paymentStatus": "PAID",
+      "paymentTransactionId": "TXN-UPI-71049284",
+      "createdAt": "2026-06-14T06:25:31.537Z",
+      "otpVerified": true,
+      "items": [
+        {
+          "menuItemId": "item-27",
+          "name": "Mumbai Special Vada Pav (2pcs)",
+          "quantity": 2,
+          "price": 90,
+          "subtotal": 180
+        },
+        {
+          "menuItemId": "item-44",
+          "name": "Classic Espresso Tiramisu",
+          "quantity": 1,
+          "price": 210,
+          "subtotal": 210
+        }
+      ]
     }
   ],
   "inventoryItems": [
